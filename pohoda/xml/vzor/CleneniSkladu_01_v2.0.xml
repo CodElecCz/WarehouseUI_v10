@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<dat:dataPack id="002" ico="12345678" application="Ext app" version = "2.0" note="Žádost o seznamy"
+      xmlns:dat="http://www.stormware.cz/schema/version_2/data.xsd"
+			xmlns:lst="http://www.stormware.cz/schema/version_2/list.xsd"
+			xmlns:typ="http://www.stormware.cz/schema/version_2/type.xsd"
+>
+	<dat:dataPackItem id="a56" version="2.0">
+		<lst:listStorageRequest version="1.0">
+			
+		</lst:listStorageRequest> 
+	</dat:dataPackItem>
+	
+</dat:dataPack>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<dat:dataPack id="pri001" ico="12345678" application="StwTest" version = "2.0" note="Import Příjemky"  
+xmlns:dat="http://www.stormware.cz/schema/version_2/data.xsd"  
+xmlns:pri="http://www.stormware.cz/schema/version_2/prijemka.xsd"  
+xmlns:typ="http://www.stormware.cz/schema/version_2/type.xsd">
+  <dat:dataPackItem id="PRI001" version="2.0">
+  <!-- import příjemky se skladovými položkami -->
+    <pri:prijemka version="2.0">
+      <pri:prijemkaHeader>
+        <pri:date>2019-10-14</pri:date>
+        <pri:text>Příjemky s položkama</pri:text>
+        <!--adresa bez vazby na programu POHODA-->
+		  <pri:partnerIdentity>
+          <typ:address>
+            <typ:company>ZET s.r.o.</typ:company>
+            <typ:division>Obchodní oddělení</typ:division>
+            <typ:name>Ondřej Maršík</typ:name>
+            <typ:city>Praha 3</typ:city>
+            <typ:street>Zahradní</typ:street>
+            <typ:zip>56801</typ:zip>
+            <typ:ico>1111</typ:ico>
+            <typ:dic>330-11111</typ:dic>
+          </typ:address>
+          <typ:shipToAddress>
+            <typ:name>Soukop Bohumil</typ:name>
+            <typ:city>Třebíč</typ:city>
+            <typ:street>Nová</typ:street>
+          </typ:shipToAddress>
+        </pri:partnerIdentity>
+        <pri:centre>
+          <typ:id>1</typ:id>
+          <typ:ids>Trebic</typ:ids>
+        </pri:centre>
+        <pri:activity>
+          <typ:id>1</typ:id>
+        </pri:activity>
+        <pri:contract>
+          <typ:id>1</typ:id>
+        </pri:contract>
+        <pri:note>Načteno z XML.</pri:note>
+		<pri:intNote>Import příjemky z více skladovýma položkami.</pri:intNote>  
+      </pri:prijemkaHeader>
+      <pri:prijemkaDetail>
+		<!--skladova polozka-->  
+        <pri:prijemkaItem>
+          <pri:quantity>4</pri:quantity>
+          <pri:unit>ks</pri:unit>
+          <pri:coefficient>1</pri:coefficient>
+          <pri:rateVAT>high</pri:rateVAT>
+          <pri:discountPercentage>0</pri:discountPercentage>
+          <pri:stockItem>
+            <typ:stockItem>
+              <typ:ids>Konf11</typ:ids>
+            </typ:stockItem>
+          </pri:stockItem>
+          <pri:centre>
+            <typ:id>1</typ:id>
+          </pri:centre>
+          <pri:activity>
+            <typ:id>1</typ:id>
+          </pri:activity>
+          <pri:contract>
+            <typ:id>1</typ:id>
+          </pri:contract>
+        </pri:prijemkaItem>
+		<!--skladova polozka-->  
+        <pri:prijemkaItem>
+          <pri:quantity>3</pri:quantity>
+          <pri:unit>ks</pri:unit>
+          <pri:coefficient>1</pri:coefficient>
+          <pri:rateVAT>high</pri:rateVAT>
+          <pri:discountPercentage>0</pri:discountPercentage>
+          <pri:stockItem>
+            <typ:stockItem>
+              <typ:ids>Kř1320</typ:ids>
+            </typ:stockItem>
+          </pri:stockItem>
+          <pri:centre>
+            <typ:id>1</typ:id>
+          </pri:centre>
+          <pri:activity>
+            <typ:id>1</typ:id>
+          </pri:activity>
+          <pri:contract>
+            <typ:id>1</typ:id>
+          </pri:contract>
+        </pri:prijemkaItem>
+		  
+      </pri:prijemkaDetail>
+      <pri:prijemkaSummary>
+        <pri:roundingDocument>math2one</pri:roundingDocument>
+        <pri:roundingVAT>noneEveryRate</pri:roundingVAT>
+        <pri:homeCurrency>
+          <typ:priceNone>0</typ:priceNone>
+          <typ:priceLow>2000</typ:priceLow>
+          <typ:priceLowVAT>100</typ:priceLowVAT>
+          <typ:priceLowSum>2100</typ:priceLowSum>
+          <typ:priceHigh>10000</typ:priceHigh>
+          <typ:priceHighVAT>1900</typ:priceHighVAT>
+          <typ:priceHighSum>11900</typ:priceHighSum>
+          <typ:round>
+          <typ:rateVATround>0</typ:rateVATround>
+          <typ:priceRoundSum>0</typ:priceRoundSum>
+          <typ:priceRoundSumVAT>0</typ:priceRoundSumVAT>
+        </typ:round>
+      </pri:homeCurrency>
+    </pri:prijemkaSummary>
+  </pri:prijemka>
+</dat:dataPackItem>
+</dat:dataPack>

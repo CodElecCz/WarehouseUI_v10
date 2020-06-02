@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<rsp:responsePack version="2.0" id="001" state="ok" note="" programVersion="10305.5 E1 (1.3.2013)" xmlns:rsp="http://www.stormware.cz/schema/version_2/response.xsd" xmlns:rdc="http://www.stormware.cz/schema/version_2/documentresponse.xsd" xmlns:typ="http://www.stormware.cz/schema/version_2/type.xsd" xmlns:lst="http://www.stormware.cz/schema/version_2/list.xsd" xmlns:lStk="http://www.stormware.cz/schema/version_2/list_stock.xsd" xmlns:lAdb="http://www.stormware.cz/schema/version_2/list_addBook.xsd" xmlns:acu="http://www.stormware.cz/schema/version_2/accountingunit.xsd" xmlns:inv="http://www.stormware.cz/schema/version_2/invoice.xsd" xmlns:vch="http://www.stormware.cz/schema/version_2/voucher.xsd" xmlns:int="http://www.stormware.cz/schema/version_2/intDoc.xsd" xmlns:stk="http://www.stormware.cz/schema/version_2/stock.xsd" xmlns:ord="http://www.stormware.cz/schema/version_2/order.xsd" xmlns:ofr="http://www.stormware.cz/schema/version_2/offer.xsd" xmlns:enq="http://www.stormware.cz/schema/version_2/enquiry.xsd" xmlns:vyd="http://www.stormware.cz/schema/version_2/vydejka.xsd" xmlns:pri="http://www.stormware.cz/schema/version_2/prijemka.xsd" xmlns:bal="http://www.stormware.cz/schema/version_2/balance.xsd" xmlns:pre="http://www.stormware.cz/schema/version_2/prevodka.xsd" xmlns:vyr="http://www.stormware.cz/schema/version_2/vyroba.xsd" xmlns:pro="http://www.stormware.cz/schema/version_2/prodejka.xsd" xmlns:con="http://www.stormware.cz/schema/version_2/contract.xsd" xmlns:adb="http://www.stormware.cz/schema/version_2/addressbook.xsd" xmlns:prm="http://www.stormware.cz/schema/version_2/parameter.xsd" xmlns:lCon="http://www.stormware.cz/schema/version_2/list_contract.xsd" xmlns:ctg="http://www.stormware.cz/schema/version_2/category.xsd" xmlns:ipm="http://www.stormware.cz/schema/version_2/intParam.xsd" xmlns:str="http://www.stormware.cz/schema/version_2/storage.xsd" xmlns:idp="http://www.stormware.cz/schema/version_2/individualPrice.xsd" xmlns:sup="http://www.stormware.cz/schema/version_2/supplier.xsd">
+  <rsp:responsePackItem version="2.0" id="Do001" state="ok">
+    <lst:supplier version="2.0" dateTimeStamp="2013-03-14T13:47:17" dateValidFrom="2013-03-14" state="ok">
+      <lst:supplier version="2.0">
+        <sup:stockItem>
+          <typ:store>
+            <typ:id>4</typ:id>
+            <typ:ids>PRODEJ</typ:ids>
+          </typ:store>
+          <typ:stockItem>
+            <typ:id>25</typ:id>
+            <typ:ids>Z100</typ:ids>
+            <typ:PLU>410</typ:PLU>
+          </typ:stockItem>
+        </sup:stockItem>
+        <sup:suppliers>
+          <sup:supplierItem>
+            <sup:id>1</sup:id>
+            <sup:refAd>
+              <typ:id>2</typ:id>
+              <typ:ids>ABC Audit s.r.o.</typ:ids>
+            </sup:refAd>
+            <sup:orderCode>101/12a</sup:orderCode>
+            <sup:orderName>židle Z100</sup:orderName>
+            <sup:purchasingPrice>700</sup:purchasingPrice>
+            <sup:rate>0.0</sup:rate>
+            <sup:payVAT>false</sup:payVAT>
+            <sup:ean>11231455</sup:ean>
+            <sup:printEAN>true</sup:printEAN>
+            <sup:unitCoefEAN>1.0</sup:unitCoefEAN>
+            <sup:deliveryTime>2</sup:deliveryTime>
+            <sup:deliveryPeriod>
+              <typ:id>1</typ:id>
+              <typ:ids>dny</typ:ids>
+            </sup:deliveryPeriod>
+            <sup:minQuantity>0.0</sup:minQuantity>
+          </sup:supplierItem>
+          <sup:supplierItem>
+            <sup:id>2</sup:id>
+            <sup:refAd>
+              <typ:id>15</typ:id>
+              <typ:ids>INTEAK spol. s r. o.</typ:ids>
+            </sup:refAd>
+            <sup:orderCode>M6-Z100</sup:orderCode>
+            <sup:orderName>dřevěná židle Z100</sup:orderName>
+            <sup:purchasingPrice>720</sup:purchasingPrice>
+            <sup:rate>0.0</sup:rate>
+            <sup:payVAT>false</sup:payVAT>
+            <sup:ean>21208423</sup:ean>
+            <sup:printEAN>true</sup:printEAN>
+            <sup:unitCoefEAN>1.0</sup:unitCoefEAN>
+            <sup:deliveryTime>1</sup:deliveryTime>
+            <sup:deliveryPeriod>
+              <typ:id>1</typ:id>
+              <typ:ids>dny</typ:ids>
+            </sup:deliveryPeriod>
+            <sup:minQuantity>0.0</sup:minQuantity>
+          </sup:supplierItem>
+          <sup:supplierItem>
+            <sup:id>3</sup:id>
+            <sup:refAd>
+              <typ:id>5</typ:id>
+              <typ:ids>ACO nábytkové prvky s.r.o.</typ:ids>
+            </sup:refAd>
+            <sup:orderCode>A100001</sup:orderCode>
+            <sup:orderName>židle Z100</sup:orderName>
+            <sup:purchasingPrice>690</sup:purchasingPrice>
+            <sup:rate>0.0</sup:rate>
+            <sup:payVAT>false</sup:payVAT>
+            <sup:ean>51442613</sup:ean>
+            <sup:printEAN>true</sup:printEAN>
+            <sup:unitCoefEAN>1.0</sup:unitCoefEAN>
+            <sup:deliveryTime>3</sup:deliveryTime>
+            <sup:deliveryPeriod>
+              <typ:id>1</typ:id>
+              <typ:ids>dny</typ:ids>
+            </sup:deliveryPeriod>
+            <sup:minQuantity>0.0</sup:minQuantity>
+          </sup:supplierItem>
+        </sup:suppliers>
+      </lst:supplier>
+      <lst:supplier version="2.0">
+        <sup:stockItem>
+          <typ:store>
+            <typ:id>1</typ:id>
+            <typ:ids>ZBOŽÍ</typ:ids>
+          </typ:store>
+          <typ:stockItem>
+            <typ:id>26</typ:id>
+            <typ:ids>Z120</typ:ids>
+            <typ:PLU>649</typ:PLU>
+          </typ:stockItem>
+        </sup:stockItem>
+        <sup:suppliers>
+          <sup:supplierItem>
+            <sup:id>4</sup:id>
+            <sup:refAd>
+              <typ:id>2</typ:id>
+              <typ:ids>ABC Audit s.r.o.</typ:ids>
+            </sup:refAd>
+            <sup:orderCode>A12-221</sup:orderCode>
+            <sup:orderName>židle 120</sup:orderName>
+            <sup:purchasingPrice>900</sup:purchasingPrice>
+            <sup:rate>0.0</sup:rate>
+            <sup:payVAT>false</sup:payVAT>
+            <sup:printEAN>true</sup:printEAN>
+            <sup:unitCoefEAN>1.0</sup:unitCoefEAN>
+            <sup:deliveryTime>2</sup:deliveryTime>
+            <sup:deliveryPeriod>
+              <typ:id>1</typ:id>
+              <typ:ids>dny</typ:ids>
+            </sup:deliveryPeriod>
+            <sup:minQuantity>0.0</sup:minQuantity>
+          </sup:supplierItem>
+          <sup:supplierItem>
+            <sup:id>5</sup:id>
+            <sup:refAd>
+              <typ:id>5</typ:id>
+              <typ:ids>ACO nábytkové prvky s.r.o.</typ:ids>
+            </sup:refAd>
+            <sup:orderCode>M6-2125</sup:orderCode>
+            <sup:orderName>židle 120</sup:orderName>
+            <sup:purchasingPrice>880</sup:purchasingPrice>
+            <sup:rate>0.0</sup:rate>
+            <sup:payVAT>false</sup:payVAT>
+            <sup:printEAN>true</sup:printEAN>
+            <sup:unitCoefEAN>1.0</sup:unitCoefEAN>
+            <sup:deliveryTime>2</sup:deliveryTime>
+            <sup:deliveryPeriod>
+              <typ:id>1</typ:id>
+              <typ:ids>dny</typ:ids>
+            </sup:deliveryPeriod>
+            <sup:minQuantity>0.0</sup:minQuantity>
+          </sup:supplierItem>
+          <sup:supplierItem>
+            <sup:id>6</sup:id>
+            <sup:refAd>
+              <typ:id>15</typ:id>
+              <typ:ids>INTEAK spol. s r. o.</typ:ids>
+            </sup:refAd>
+            <sup:orderCode>121103</sup:orderCode>
+            <sup:orderName>židle 120</sup:orderName>
+            <sup:purchasingPrice>750</sup:purchasingPrice>
+            <sup:rate>0.0</sup:rate>
+            <sup:payVAT>false</sup:payVAT>
+            <sup:printEAN>true</sup:printEAN>
+            <sup:unitCoefEAN>1.0</sup:unitCoefEAN>
+            <sup:deliveryTime>4</sup:deliveryTime>
+            <sup:deliveryPeriod>
+              <typ:id>1</typ:id>
+              <typ:ids>dny</typ:ids>
+            </sup:deliveryPeriod>
+            <sup:minQuantity>0.0</sup:minQuantity>
+          </sup:supplierItem>
+        </sup:suppliers>
+      </lst:supplier>
+    </lst:supplier>
+  </rsp:responsePackItem>
+</rsp:responsePack>

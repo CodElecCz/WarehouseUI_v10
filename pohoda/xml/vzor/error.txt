@@ -1,0 +1,11 @@
+400	Bad request	"Požadavek nemůže být vyřízen, poněvadž byl syntakticky nesprávně zapsán"
+401	Unauthorized	"Používán tam, kde je vyžadována autentifikace, ale nebyla zatím provedena". V tomto případě se jedná o problém, kdy buď v HTTP požadavku chybí autentizační údaje nebo daný uživatel není v programu POHODA vytvořen.
+403	Forbidden	"Požadavek byl legální, ale server odmítl odpovědět". Například se jedná o problém, kdy daný uživatel nemá právo na otevření účetní jednotky v programu POHODA.
+404	Not found	„Požadovaný dokument nebyl nalezen“. Jedná se o problém, kdy byla chybně zadaná URL cesta k mServeru. Například se jedná o problém, kdy v URL adrese není uvedena cesta k umístění na serveru "/XML". Příklad správně zadné URL: 192.168.0.1:444/xml
+405	Method Not Allowed	„Požadavek byl zavolán na zdroj s metodou, kterou nepodporuje. Například se jedná o službu, na kterou se odesílají data metodou POST a někdo se je místo toho pokusí odeslat metodou GET.“
+408	Request Timeout	„Vypršel čas vyhrazený na zpracování požadavku“
+500	Internal server error	„Při zpracovávání požadavku došlo k blíže nespecifikované chybě“
+502	Bad Gateway	„Proxy server nebo brána obdržely od serveru neplatnou odpověď“
+503	Service unavailable	„Služba je dočasně nedostupná“
+504	Gateway Timeout	„Proxy server nedostal od cílového serveru odpověď v daném čase“
+505	HTTP Version Not Supported	„Server nepodporuje verzi protokolu HTTP použitou v požadavku“

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<rsp:responsePack version="2.0" id="00004" state="ok" note="" programVersion="10400.133 (13.5.2013)" xmlns:rsp="http://www.stormware.cz/schema/version_2/response.xsd" xmlns:rdc="http://www.stormware.cz/schema/version_2/documentresponse.xsd" xmlns:typ="http://www.stormware.cz/schema/version_2/type.xsd" xmlns:lst="http://www.stormware.cz/schema/version_2/list.xsd" xmlns:lStk="http://www.stormware.cz/schema/version_2/list_stock.xsd" xmlns:lAdb="http://www.stormware.cz/schema/version_2/list_addBook.xsd" xmlns:acu="http://www.stormware.cz/schema/version_2/accountingunit.xsd" xmlns:inv="http://www.stormware.cz/schema/version_2/invoice.xsd" xmlns:vch="http://www.stormware.cz/schema/version_2/voucher.xsd" xmlns:int="http://www.stormware.cz/schema/version_2/intDoc.xsd" xmlns:stk="http://www.stormware.cz/schema/version_2/stock.xsd" xmlns:ord="http://www.stormware.cz/schema/version_2/order.xsd" xmlns:ofr="http://www.stormware.cz/schema/version_2/offer.xsd" xmlns:enq="http://www.stormware.cz/schema/version_2/enquiry.xsd" xmlns:vyd="http://www.stormware.cz/schema/version_2/vydejka.xsd" xmlns:pri="http://www.stormware.cz/schema/version_2/prijemka.xsd" xmlns:bal="http://www.stormware.cz/schema/version_2/balance.xsd" xmlns:pre="http://www.stormware.cz/schema/version_2/prevodka.xsd" xmlns:vyr="http://www.stormware.cz/schema/version_2/vyroba.xsd" xmlns:pro="http://www.stormware.cz/schema/version_2/prodejka.xsd" xmlns:con="http://www.stormware.cz/schema/version_2/contract.xsd" xmlns:adb="http://www.stormware.cz/schema/version_2/addressbook.xsd" xmlns:prm="http://www.stormware.cz/schema/version_2/parameter.xsd" xmlns:lCon="http://www.stormware.cz/schema/version_2/list_contract.xsd" xmlns:ctg="http://www.stormware.cz/schema/version_2/category.xsd" xmlns:ipm="http://www.stormware.cz/schema/version_2/intParam.xsd" xmlns:str="http://www.stormware.cz/schema/version_2/storage.xsd" xmlns:idp="http://www.stormware.cz/schema/version_2/individualPrice.xsd" xmlns:sup="http://www.stormware.cz/schema/version_2/supplier.xsd" xmlns:prn="http://www.stormware.cz/schema/version_2/print.xsd" xmlns:act="http://www.stormware.cz/schema/version_2/accountancy.xsd" xmlns:bnk="http://www.stormware.cz/schema/version_2/bank.xsd">
+<rsp:responsePackItem version="2.0" id="001" state="ok">
+	<acu:listAccountingUnit version="1.6" dateTimeStamp="2013-05-13T16:04:32" dateValidFrom="2013-05-13" state="ok">
+		<acu:itemAccountingUnit>
+			<acu:year>2013</acu:year>
+			<acu:yearType>calendar</acu:yearType>
+			<acu:dateFrom>2013-01-01</acu:dateFrom>
+			<acu:dateTo>2013-12-31</acu:dateTo>
+			<acu:unitType>doubleEntry</acu:unitType>
+			<acu:stateType>naturalPerson</acu:stateType>
+			<acu:accountingUnitIdentity>
+				<typ:address>
+					<typ:company>Hospodářské zemědělské društsvo Chvojtice</typ:company>
+					<typ:title/>
+					<typ:surname>Novák</typ:surname>
+					<typ:name>Jan</typ:name>
+					<typ:city>Jihlava 1</typ:city>
+					<typ:street>Horní</typ:street>
+					<typ:number>15</typ:number>
+					<typ:zip>586 01</typ:zip>
+					<typ:ico>25313142</typ:ico>
+					<typ:dic>CZ25313142</typ:dic>
+					<typ:phone>569 876 542</typ:phone>
+					<typ:mobilPhone>602 852 369</typ:mobilPhone>
+					<typ:fax>564 563 216</typ:fax>
+					<typ:email>info@novak.cz</typ:email>
+					<typ:www>www.novak.cz</typ:www>
+				</typ:address>
+			</acu:accountingUnitIdentity>
+			<acu:dataFile>25313142_2013.mdb</acu:dataFile>
+		</acu:itemAccountingUnit>
+		<acu:itemAccountingUnit>
+			<acu:year>2012</acu:year>
+			<acu:yearType>calendar</acu:yearType>
+			<acu:dateFrom>2012-01-01</acu:dateFrom>
+			<acu:dateTo>2012-12-31</acu:dateTo>
+			<acu:unitType>doubleEntry</acu:unitType>
+			<acu:stateType>naturalPerson</acu:stateType>
+			<acu:accountingUnitIdentity>
+				<typ:address>
+					<typ:company>Homebanking</typ:company>
+					<typ:title/>
+					<typ:surname>Novák</typ:surname>
+					<typ:name>Jan</typ:name>
+					<typ:city>Jihlava 1</typ:city>
+					<typ:street>Horní</typ:street>
+					<typ:number>15</typ:number>
+					<typ:zip>586 01</typ:zip>
+					<typ:ico>12345678</typ:ico>
+					<typ:dic>CZ12345678</typ:dic>
+					<typ:phone>569 876 542</typ:phone>
+					<typ:mobilPhone>602 852 369</typ:mobilPhone>
+					<typ:fax>564 563 216</typ:fax>
+					<typ:email>info@novak.cz</typ:email>
+					<typ:www>www.novak.cz</typ:www>
+				</typ:address>
+			</acu:accountingUnitIdentity>
+			<acu:dataFile>12345678_2012.mdb</acu:dataFile>
+		</acu:itemAccountingUnit>
+		<acu:itemAccountingUnit>
+			<acu:year>2013</acu:year>
+			<acu:yearType>calendar</acu:yearType>
+			<acu:dateFrom>2013-01-01</acu:dateFrom>
+			<acu:dateTo>2013-12-31</acu:dateTo>
+			<acu:unitType>doubleEntry</acu:unitType>
+			<acu:stateType>naturalPerson</acu:stateType>
+			<acu:accountingUnitIdentity>
+				<typ:address>
+					<typ:company>číselné řady</typ:company>
+					<typ:title/>
+					<typ:surname>Novák</typ:surname>
+					<typ:name>Jan</typ:name>
+					<typ:city>Jihlava 1</typ:city>
+					<typ:street>Horní</typ:street>
+					<typ:number>15</typ:number>
+					<typ:zip>586 01</typ:zip>
+					<typ:ico>12345678</typ:ico>
+					<typ:dic>CZ12345678</typ:dic>
+					<typ:phone>569 876 542</typ:phone>
+					<typ:mobilPhone>602 852 369</typ:mobilPhone>
+					<typ:fax>564 563 216</typ:fax>
+					<typ:email>info@novak.cz</typ:email>
+					<typ:www>www.novak.cz</typ:www>
+				</typ:address>
+			</acu:accountingUnitIdentity>
+			<acu:dataFile>12345678_2013 (01).mdb</acu:dataFile>
+		</acu:itemAccountingUnit>
+	</acu:listAccountingUnit>
+</rsp:responsePackItem>
+</rsp:responsePack>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<dat:dataPack id="vyd001" ico="12345678" application="StwTest" version = "2.0" note="Import Vydejky" 
+xmlns:dat="http://www.stormware.cz/schema/version_2/data.xsd" 
+xmlns:vyd="http://www.stormware.cz/schema/version_2/vydejka.xsd" 
+xmlns:typ="http://www.stormware.cz/schema/version_2/type.xsd">
+
+<dat:dataPackItem id="VYD001" version="2.0">
+<!-- import výdejky -->
+	<vyd:vydejka version="2.0">
+		<vyd:vydejkaHeader>
+			<vyd:date>2019-10-14</vyd:date>
+			<vyd:numberOrder></vyd:numberOrder>
+			<vyd:dateOrder>2019-10-14</vyd:dateOrder>
+			<vyd:text>Výdejka s položkami</vyd:text>
+			<vyd:partnerIdentity>
+			<!--adresa bez vazby na program POHODA-->	
+				<typ:address>
+					<typ:company>ZET s.r.o.</typ:company>
+					<typ:division>Obchodní oddělení</typ:division>
+					<typ:name>Ondřej Maršík</typ:name>
+					<typ:city>Praha 3</typ:city>
+					<typ:street>Zahradní</typ:street>
+					<typ:zip>56801</typ:zip>
+					<typ:ico>1111</typ:ico>
+					<typ:dic>330-11111</typ:dic>
+				</typ:address>
+				<typ:shipToAddress>
+					<typ:name>Soukup Bohumil</typ:name>
+					<typ:city>Třebíč</typ:city>
+					<typ:street>Nová</typ:street>
+				</typ:shipToAddress>
+			</vyd:partnerIdentity>
+			<vyd:priceLevel>
+				<typ:id>2</typ:id>
+				<typ:ids>Sleva 4</typ:ids>
+			</vyd:priceLevel>
+			<vyd:centre>
+				<typ:id>1</typ:id>
+				<typ:ids>Trebic</typ:ids>
+			</vyd:centre>
+			<vyd:activity>
+				<typ:id>1</typ:id>
+			</vyd:activity>
+			<vyd:contract>
+				<typ:id>1</typ:id>
+			</vyd:contract>
+			<vyd:note>Načteno z XML.</vyd:note>
+			<vyd:intNote>Import výdejky z textovou a skladovou položkou.</vyd:intNote>
+		</vyd:vydejkaHeader>
+
+		<vyd:vydejkaDetail>
+		<!--skladova polozka-->	
+		<vyd:vydejkaItem>
+			<vyd:quantity>1</vyd:quantity>
+			<vyd:unit>ks</vyd:unit>
+			<vyd:coefficient>1</vyd:coefficient>
+			<vyd:rateVAT>high</vyd:rateVAT>
+			<vyd:discountPercentage>0</vyd:discountPercentage>
+			<vyd:homeCurrency>
+				<typ:unitPrice>2000</typ:unitPrice>
+			</vyd:homeCurrency>
+			<vyd:stockItem>
+				<typ:stockItem>
+					<typ:ids>Z120</typ:ids>
+				</typ:stockItem>
+			</vyd:stockItem>
+			<vyd:centre>
+				<typ:id>1</typ:id>
+			</vyd:centre>
+			<vyd:activity>
+				<typ:id>1</typ:id>
+			</vyd:activity>
+			<vyd:contract>
+				<typ:id>1</typ:id>
+			</vyd:contract>
+		</vyd:vydejkaItem>
+		<!--textova polozka-->
+		<vyd:vydejkaItem>
+			<vyd:text>Balné</vyd:text>
+			<vyd:quantity>1</vyd:quantity>
+			<vyd:unit>ks</vyd:unit>
+			<vyd:coefficient>1</vyd:coefficient>
+			<vyd:rateVAT>high</vyd:rateVAT>
+			<vyd:discountPercentage>0</vyd:discountPercentage>
+			<vyd:homeCurrency>
+				<typ:unitPrice>150</typ:unitPrice>
+			</vyd:homeCurrency>
+		</vyd:vydejkaItem>
+		</vyd:vydejkaDetail>
+
+	</vyd:vydejka>
+</dat:dataPackItem>
+</dat:dataPack>

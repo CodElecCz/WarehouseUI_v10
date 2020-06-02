@@ -1,0 +1,18 @@
+POST http://localhost:444/xml HTTP/1.1
+User-Agent: User-Agent: STORMWARE HTTP client. http://www.stormware.cz
+STW-Authorization: Basic QDo=
+Content-Type: text/xml
+Accept-Encoding: gzip, deflate
+Host: http://localhost:444
+Content-Length: 527
+Pragma: no-cache
+Connection: Keep-Alive
+
+<?xml version="1.0" encoding="Windows-1250"?>
+<dat:dataPack xmlns:dat="http://www.stormware.cz/schema/version_2/data.xsd" xmlns:stk="http://www.stormware.cz/schema/version_2/stock.xsd" xmlns:ftr="http://www.stormware.cz/schema/version_2/filter.xsd" xmlns:lStk="http://www.stormware.cz/schema/version_2/list_stock.xsd" xmlns:typ="http://www.stormware.cz/schema/version_2/type.xsd" id="00000001" ico="25313142" application="HTTP klient" version="2.0" note="Export zasob">
+  <dat:dataPackItem id="00000001" version="2.0">
+    <lStk:listStockRequest version="2.0" stockVersion="2.0">
+      <lStk:requestStock/>
+    </lStk:listStockRequest>
+  </dat:dataPackItem>
+</dat:dataPack>

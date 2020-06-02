@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<dat:dataPack id="001" ico="12345678" application="TestAD" version = "2.0" note="Export adresáře"
+  xmlns:dat="http://www.stormware.cz/schema/version_2/data.xsd"   
+  xmlns:lAdb="http://www.stormware.cz/schema/version_2/list_addBook.xsd"
+  xmlns:ftr="http://www.stormware.cz/schema/version_2/filter.xsd"
+  xmlns:typ="http://www.stormware.cz/schema/version_2/type.xsd"
+>
+    
+  <dat:dataPackItem id="01" version="2.0">	
+  <!-- export adresáře  -->
+    <lAdb:listAddressBookRequest version="2.0" addressBookVersion="2.0">
+			<lAdb:requestAddressBook>
+				
+			</lAdb:requestAddressBook>
+		</lAdb:listAddressBookRequest>
+	</dat:dataPackItem>
+	
+</dat:dataPack>
+

@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<rsp:responsePack version="2.0" id="001" state="ok" note="" programVersion="10400.133 (13.5.2013)" xmlns:rsp="http://www.stormware.cz/schema/version_2/response.xsd" xmlns:rdc="http://www.stormware.cz/schema/version_2/documentresponse.xsd" xmlns:typ="http://www.stormware.cz/schema/version_2/type.xsd" xmlns:lst="http://www.stormware.cz/schema/version_2/list.xsd" xmlns:lStk="http://www.stormware.cz/schema/version_2/list_stock.xsd" xmlns:lAdb="http://www.stormware.cz/schema/version_2/list_addBook.xsd" xmlns:acu="http://www.stormware.cz/schema/version_2/accountingunit.xsd" xmlns:inv="http://www.stormware.cz/schema/version_2/invoice.xsd" xmlns:vch="http://www.stormware.cz/schema/version_2/voucher.xsd" xmlns:int="http://www.stormware.cz/schema/version_2/intDoc.xsd" xmlns:stk="http://www.stormware.cz/schema/version_2/stock.xsd" xmlns:ord="http://www.stormware.cz/schema/version_2/order.xsd" xmlns:ofr="http://www.stormware.cz/schema/version_2/offer.xsd" xmlns:enq="http://www.stormware.cz/schema/version_2/enquiry.xsd" xmlns:vyd="http://www.stormware.cz/schema/version_2/vydejka.xsd" xmlns:pri="http://www.stormware.cz/schema/version_2/prijemka.xsd" xmlns:bal="http://www.stormware.cz/schema/version_2/balance.xsd" xmlns:pre="http://www.stormware.cz/schema/version_2/prevodka.xsd" xmlns:vyr="http://www.stormware.cz/schema/version_2/vyroba.xsd" xmlns:pro="http://www.stormware.cz/schema/version_2/prodejka.xsd" xmlns:con="http://www.stormware.cz/schema/version_2/contract.xsd" xmlns:adb="http://www.stormware.cz/schema/version_2/addressbook.xsd" xmlns:prm="http://www.stormware.cz/schema/version_2/parameter.xsd" xmlns:lCon="http://www.stormware.cz/schema/version_2/list_contract.xsd" xmlns:ctg="http://www.stormware.cz/schema/version_2/category.xsd" xmlns:ipm="http://www.stormware.cz/schema/version_2/intParam.xsd" xmlns:str="http://www.stormware.cz/schema/version_2/storage.xsd" xmlns:idp="http://www.stormware.cz/schema/version_2/individualPrice.xsd" xmlns:sup="http://www.stormware.cz/schema/version_2/supplier.xsd" xmlns:prn="http://www.stormware.cz/schema/version_2/print.xsd" xmlns:act="http://www.stormware.cz/schema/version_2/accountancy.xsd" xmlns:bnk="http://www.stormware.cz/schema/version_2/bank.xsd">
+<rsp:responsePackItem version="2.0" id="01" state="ok">
+	<lAdb:listAddressBook version="2.0" dateTimeStamp="2013-05-13T15:24:54" dateValidFrom="2013-05-13" state="ok">
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>2</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>ABC Audit s.r.o.</typ:company>
+						<typ:division/>
+						<typ:name>Ing. Roman Dvorský</typ:name>
+						<typ:city>Třebíč 1</typ:city>
+						<typ:street>Palackého 74</typ:street>
+						<typ:zip>674 01</typ:zip>
+						<typ:ico>30081593</typ:ico>
+						<typ:dic>CZ30081593</typ:dic>
+					</typ:address>
+				</adb:identity>
+				<adb:region>Vysočina</adb:region>
+				<adb:phone>568 694 123</adb:phone>
+				<adb:mobil>602 529 786</adb:mobil>
+				<adb:fax>568 607 456</adb:fax>
+				<adb:email>info@abc-audit.cz</adb:email>
+				<adb:web>www.abc-audit.cz</adb:web>
+				<adb:adGroup>Účetní,Zákazník</adb:adGroup>
+				<adb:adKey>PF</adb:adKey>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00007</typ:numberRequested>
+				</adb:number>
+				<adb:p1>true</adb:p1>
+				<adb:p2>false</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+			</adb:addressbookHeader>
+			<adb:addressbookAccount>
+				<adb:accountItem>
+					<adb:id>1</adb:id>
+					<adb:accountNumber>195783960237</adb:accountNumber>
+					<adb:symSpec/>
+					<adb:bankCode>0300</adb:bankCode>
+					<adb:defaultAccount>true</adb:defaultAccount>
+				</adb:accountItem>
+			</adb:addressbookAccount>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>5</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>ACO nábytkové prvky s.r.o.</typ:company>
+						<typ:division/>
+						<typ:name>Michal Dolejší</typ:name>
+						<typ:city>Opava 1</typ:city>
+						<typ:street>Jana Nerudy 6</typ:street>
+						<typ:zip>746 01</typ:zip>
+						<typ:ico>55967724</typ:ico>
+						<typ:dic>CZ55967724</typ:dic>
+					</typ:address>
+				</adb:identity>
+				<adb:region>Moravskoslezský</adb:region>
+				<adb:phone>553 387 734</adb:phone>
+				<adb:mobil>606 141 955</adb:mobil>
+				<adb:fax>553 466 651</adb:fax>
+				<adb:email>info@aco.cz</adb:email>
+				<adb:web>www.aco.cz</adb:web>
+				<adb:adGroup>Obchod</adb:adGroup>
+				<adb:adKey>PF</adb:adKey>
+				<adb:credit>15000</adb:credit>
+				<adb:priceIDS>Sleva 1</adb:priceIDS>
+				<adb:maturity>30</adb:maturity>
+				<adb:paymentType>
+					<typ:id>1</typ:id>
+					<typ:ids>příkazem</typ:ids>
+					<typ:paymentType>draft</typ:paymentType>
+				</adb:paymentType>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00008</typ:numberRequested>
+				</adb:number>
+				<adb:p1>true</adb:p1>
+				<adb:p2>true</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+			</adb:addressbookHeader>
+			<adb:addressbookAccount>
+				<adb:accountItem>
+					<adb:id>2</adb:id>
+					<adb:accountNumber>705-57624201</adb:accountNumber>
+					<adb:symSpec/>
+					<adb:bankCode>5500</adb:bankCode>
+					<adb:defaultAccount>true</adb:defaultAccount>
+				</adb:accountItem>
+			</adb:addressbookAccount>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>6</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>AgroZet a.s. </typ:company>
+						<typ:division/>
+						<typ:name>Marek Světák</typ:name>
+						<typ:city>Kaplice</typ:city>
+						<typ:street>Linecká 323</typ:street>
+						<typ:zip>382 41</typ:zip>
+						<typ:ico>45622877</typ:ico>
+						<typ:dic>CZ45622877</typ:dic>
+					</typ:address>
+				</adb:identity>
+				<adb:region>Jihočeský</adb:region>
+				<adb:phone>380 356 547</adb:phone>
+				<adb:mobil>603 523 641</adb:mobil>
+				<adb:fax>380 833 271</adb:fax>
+				<adb:email>prodej@agrozet.cz</adb:email>
+				<adb:web>www.agrozet.cz</adb:web>
+				<adb:adGroup>Zákazník</adb:adGroup>
+				<adb:adKey>Hlídat placení</adb:adKey>
+				<adb:credit>0</adb:credit>
+				<adb:paymentType>
+					<typ:id>2</typ:id>
+					<typ:ids>Hotově</typ:ids>
+					<typ:paymentType>cash</typ:paymentType>
+				</adb:paymentType>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00009</typ:numberRequested>
+				</adb:number>
+				<adb:p1>false</adb:p1>
+				<adb:p2>true</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+				<adb:message>Neplatí, pouze za hotové !</adb:message>
+			</adb:addressbookHeader>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>7</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>AK - Media a. s.</typ:company>
+						<typ:division/>
+						<typ:name>Mgr. Ivana Krátká</typ:name>
+						<typ:city>Jihlava 1</typ:city>
+						<typ:street>Masarykovo náměstí 6</typ:street>
+						<typ:zip>586 01</typ:zip>
+						<typ:ico>33044934</typ:ico>
+						<typ:dic>CZ33044934</typ:dic>
+					</typ:address>
+				</adb:identity>
+				<adb:region>Vysočina</adb:region>
+				<adb:phone>567 356 005</adb:phone>
+				<adb:mobil>603 916 437</adb:mobil>
+				<adb:fax>564 026 447</adb:fax>
+				<adb:email>ak@media.cz</adb:email>
+				<adb:web>www.ak-media.cz</adb:web>
+				<adb:adGroup>Reklama</adb:adGroup>
+				<adb:adKey>PF</adb:adKey>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00010</typ:numberRequested>
+				</adb:number>
+				<adb:p1>true</adb:p1>
+				<adb:p2>true</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+			</adb:addressbookHeader>
+			<adb:addressbookAccount>
+				<adb:accountItem>
+					<adb:id>3</adb:id>
+					<adb:accountNumber>833645081</adb:accountNumber>
+					<adb:symSpec/>
+					<adb:bankCode>0100</adb:bankCode>
+					<adb:defaultAccount>true</adb:defaultAccount>
+				</adb:accountItem>
+			</adb:addressbookAccount>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>8</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>Argo, a. s.</typ:company>
+						<typ:division/>
+						<typ:name>Martin Dvořáček</typ:name>
+						<typ:city>Praha 2</typ:city>
+						<typ:street>Trocnovská 3</typ:street>
+						<typ:zip>120 00</typ:zip>
+						<typ:ico>85471296</typ:ico>
+						<typ:dic>CZ85471296</typ:dic>
+					</typ:address>
+					<typ:shipToAddress>
+						<typ:id>1</typ:id>
+						<typ:company>Argo, a. s.</typ:company>
+						<typ:city>Praha 2</typ:city>
+						<typ:street>Jarní 8</typ:street>
+						<typ:defaultShipAddress>true</typ:defaultShipAddress>
+						<typ:zip>120 00</typ:zip>
+					</typ:shipToAddress>
+				</adb:identity>
+				<adb:region>Praha</adb:region>
+				<adb:phone>229 844 353</adb:phone>
+				<adb:mobil>602 985 214</adb:mobil>
+				<adb:fax>229 465 685</adb:fax>
+				<adb:email>info@argo.cz</adb:email>
+				<adb:web>www.argo.cz</adb:web>
+				<adb:adGroup>Stavba</adb:adGroup>
+				<adb:priceIDS>Sleva 1</adb:priceIDS>
+				<adb:maturity>20</adb:maturity>
+				<adb:paymentType>
+					<typ:id>1</typ:id>
+					<typ:ids>příkazem</typ:ids>
+					<typ:paymentType>draft</typ:paymentType>
+				</adb:paymentType>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00011</typ:numberRequested>
+				</adb:number>
+				<adb:p1>false</adb:p1>
+				<adb:p2>true</adb:p2>
+				<adb:p3>true</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+			</adb:addressbookHeader>
+			<adb:addressbookAccount>
+				<adb:accountItem>
+					<adb:id>4</adb:id>
+					<adb:accountNumber>6304881</adb:accountNumber>
+					<adb:symSpec/>
+					<adb:bankCode>2700</adb:bankCode>
+					<adb:defaultAccount>true</adb:defaultAccount>
+				</adb:accountItem>
+			</adb:addressbookAccount>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>11</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>A-STORES s.r.o.</typ:company>
+						<typ:division/>
+						<typ:name>Josef Navrátil</typ:name>
+						<typ:city>Přerov I - Město</typ:city>
+						<typ:street>Pražská 43</typ:street>
+						<typ:zip>750 02</typ:zip>
+						<typ:ico>48365960</typ:ico>
+						<typ:dic>CZ48365960</typ:dic>
+					</typ:address>
+				</adb:identity>
+				<adb:region>Olomoucký</adb:region>
+				<adb:phone>581 425 540-2</adb:phone>
+				<adb:mobil>603 145 662</adb:mobil>
+				<adb:fax>581 425 156</adb:fax>
+				<adb:email>info@a-stores.cz</adb:email>
+				<adb:web>www.a-stores.cz</adb:web>
+				<adb:adGroup>Obchod</adb:adGroup>
+				<adb:adKey>Hlídat placení</adb:adKey>
+				<adb:priceIDS>Prodejní</adb:priceIDS>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00012</typ:numberRequested>
+				</adb:number>
+				<adb:p1>false</adb:p1>
+				<adb:p2>true</adb:p2>
+				<adb:p3>true</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+				<adb:note>Zabírají na slevy.</adb:note>
+			</adb:addressbookHeader>
+			<adb:addressbookAccount>
+				<adb:accountItem>
+					<adb:id>5</adb:id>
+					<adb:accountNumber>1002208774</adb:accountNumber>
+					<adb:symSpec/>
+					<adb:bankCode>0800</adb:bankCode>
+					<adb:defaultAccount>true</adb:defaultAccount>
+				</adb:accountItem>
+			</adb:addressbookAccount>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>14</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>Dřevo a.s.</typ:company>
+						<typ:division>Odbyt</typ:division>
+						<typ:name>Jiří Kulich</typ:name>
+						<typ:city>Praha 7</typ:city>
+						<typ:street>Bubenská 17</typ:street>
+						<typ:zip>170 00</typ:zip>
+						<typ:ico>75062103</typ:ico>
+						<typ:dic>CZ75062103</typ:dic>
+					</typ:address>
+				</adb:identity>
+				<adb:region>Praha</adb:region>
+				<adb:phone>287 582 015</adb:phone>
+				<adb:fax>287 582 309</adb:fax>
+				<adb:email>drevo@mbox.vol.cz</adb:email>
+				<adb:web>www.drevo.cz</adb:web>
+				<adb:adGroup>Obchod,Pila</adb:adGroup>
+				<adb:adKey>PF</adb:adKey>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00013</typ:numberRequested>
+				</adb:number>
+				<adb:p1>true</adb:p1>
+				<adb:p2>false</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+			</adb:addressbookHeader>
+			<adb:addressbookAccount>
+				<adb:accountItem>
+					<adb:id>6</adb:id>
+					<adb:accountNumber>9977290217</adb:accountNumber>
+					<adb:symSpec/>
+					<adb:bankCode>0600</adb:bankCode>
+					<adb:defaultAccount>true</adb:defaultAccount>
+				</adb:accountItem>
+			</adb:addressbookAccount>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>15</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>INTEAK spol. s r. o.</typ:company>
+						<typ:division>prodejna</typ:division>
+						<typ:name>David Jánský</typ:name>
+						<typ:city>Benešovice</typ:city>
+						<typ:street>Jiřího z Poděbrad 35</typ:street>
+						<typ:zip>463 48</typ:zip>
+						<typ:ico>85236972</typ:ico>
+						<typ:dic>CZ85236972</typ:dic>
+					</typ:address>
+				</adb:identity>
+				<adb:region>Liberecký</adb:region>
+				<adb:phone>466 958 542</adb:phone>
+				<adb:mobil>603 985 647</adb:mobil>
+				<adb:fax>466 958 543</adb:fax>
+				<adb:email>info@inteak.cz</adb:email>
+				<adb:web>www.inteak.cz</adb:web>
+				<adb:adGroup>Obchod</adb:adGroup>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00014</typ:numberRequested>
+				</adb:number>
+				<adb:p1>true</adb:p1>
+				<adb:p2>true</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+			</adb:addressbookHeader>
+			<adb:addressbookAccount>
+				<adb:accountItem>
+					<adb:id>7</adb:id>
+					<adb:accountNumber>241271004</adb:accountNumber>
+					<adb:symSpec/>
+					<adb:bankCode>2600</adb:bankCode>
+					<adb:defaultAccount>true</adb:defaultAccount>
+				</adb:accountItem>
+			</adb:addressbookAccount>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>16</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>Jaromír Novák - Nábytek</typ:company>
+						<typ:division>Odbyt</typ:division>
+						<typ:name>Jarmila Nováková</typ:name>
+						<typ:city>Plzeň 15</typ:city>
+						<typ:street>Chlumova 6</typ:street>
+						<typ:zip>315 00</typ:zip>
+						<typ:ico>35896417</typ:ico>
+						<typ:dic>CZ58123185</typ:dic>
+					</typ:address>
+				</adb:identity>
+				<adb:region>Plzeňský</adb:region>
+				<adb:phone>378 614 753</adb:phone>
+				<adb:fax>378 521 564</adb:fax>
+				<adb:email>prodej@nabytek-novak.cz</adb:email>
+				<adb:web>www.nabytek-novak.cz</adb:web>
+				<adb:adGroup>Obchod</adb:adGroup>
+				<adb:priceIDS>Sleva 3</adb:priceIDS>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00015</typ:numberRequested>
+				</adb:number>
+				<adb:p1>false</adb:p1>
+				<adb:p2>true</adb:p2>
+				<adb:p3>true</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+			</adb:addressbookHeader>
+			<adb:addressbookAccount>
+				<adb:accountItem>
+					<adb:id>8</adb:id>
+					<adb:accountNumber>63505081</adb:accountNumber>
+					<adb:symSpec/>
+					<adb:bankCode>0600</adb:bankCode>
+					<adb:defaultAccount>true</adb:defaultAccount>
+				</adb:accountItem>
+			</adb:addressbookAccount>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>17</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>Jihomoravská energetika a. s.</typ:company>
+						<typ:division/>
+						<typ:name/>
+						<typ:city>Jihlava 1</typ:city>
+						<typ:street>Hellerova 6</typ:street>
+						<typ:zip>586 01</typ:zip>
+						<typ:ico>66214593</typ:ico>
+						<typ:dic>CZ66214593</typ:dic>
+					</typ:address>
+				</adb:identity>
+				<adb:region>Vysočina</adb:region>
+				<adb:phone>564 563 754</adb:phone>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00016</typ:numberRequested>
+				</adb:number>
+				<adb:p1>true</adb:p1>
+				<adb:p2>false</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+			</adb:addressbookHeader>
+			<adb:addressbookAccount>
+				<adb:accountItem>
+					<adb:id>9</adb:id>
+					<adb:accountNumber>123860107</adb:accountNumber>
+					<adb:symSpec/>
+					<adb:bankCode>0800</adb:bankCode>
+					<adb:defaultAccount>true</adb:defaultAccount>
+				</adb:accountItem>
+			</adb:addressbookAccount>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>18</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>Jiří Batula</typ:company>
+						<typ:division/>
+						<typ:name>Josef Stéblo</typ:name>
+						<typ:city>Bruntál 1</typ:city>
+						<typ:street>Zahradní 30</typ:street>
+						<typ:zip>792 01</typ:zip>
+						<typ:ico>15966674</typ:ico>
+					</typ:address>
+				</adb:identity>
+				<adb:region>Moravskoslezský</adb:region>
+				<adb:phone>554 766 154-5 </adb:phone>
+				<adb:mobil>602 856 321</adb:mobil>
+				<adb:fax>554 765 264</adb:fax>
+				<adb:adGroup>Zákazník</adb:adGroup>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00017</typ:numberRequested>
+				</adb:number>
+				<adb:p1>false</adb:p1>
+				<adb:p2>true</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+				<adb:note>ACT 4.4.96:  01/08/95 SENT barevný leták Windict 3.0</adb:note>
+			</adb:addressbookHeader>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>19</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>Pila Záborná v.o.s.</typ:company>
+						<typ:division/>
+						<typ:name>Josef Kotrba</typ:name>
+						<typ:city>Polná</typ:city>
+						<typ:street>č. p. 9</typ:street>
+						<typ:zip>588 13</typ:zip>
+						<typ:ico>65485364</typ:ico>
+						<typ:dic>CZ58021498</typ:dic>
+					</typ:address>
+				</adb:identity>
+				<adb:region>Vysočina</adb:region>
+				<adb:phone>567 305 594</adb:phone>
+				<adb:adGroup>Pila</adb:adGroup>
+				<adb:adKey>PF</adb:adKey>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00018</typ:numberRequested>
+				</adb:number>
+				<adb:p1>true</adb:p1>
+				<adb:p2>false</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+			</adb:addressbookHeader>
+			<adb:addressbookAccount>
+				<adb:accountItem>
+					<adb:id>10</adb:id>
+					<adb:accountNumber>813413531</adb:accountNumber>
+					<adb:symSpec/>
+					<adb:bankCode>2700</adb:bankCode>
+					<adb:defaultAccount>true</adb:defaultAccount>
+				</adb:accountItem>
+			</adb:addressbookAccount>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>20</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>Ralf Schneider</typ:company>
+						<typ:division/>
+						<typ:name>Ralf Schneider</typ:name>
+						<typ:city>Leipzig</typ:city>
+						<typ:street>Bahnhof Strasse 7</typ:street>
+						<typ:zip>386 21</typ:zip>
+						<typ:ico>256874545</typ:ico>
+						<typ:dic>DE256874545</typ:dic>
+					</typ:address>
+				</adb:identity>
+				<adb:adGroup>Obchod</adb:adGroup>
+				<adb:adKey>PF</adb:adKey>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00023</typ:numberRequested>
+				</adb:number>
+				<adb:p1>true</adb:p1>
+				<adb:p2>true</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+				<adb:accountingIssuedInvoice>
+					<typ:id>17</typ:id>
+					<typ:ids>3Fv</typ:ids>
+				</adb:accountingIssuedInvoice>
+				<adb:classificationVATIssuedInvoice>
+					<typ:id>253</typ:id>
+					<typ:ids>UDdodEU</typ:ids>
+					<typ:classificationVATType/>
+				</adb:classificationVATIssuedInvoice>
+				<adb:accountForInvoicing>
+					<typ:id>3</typ:id>
+					<typ:ids>ČSOB</typ:ids>
+				</adb:accountForInvoicing>
+				<adb:responsiblePerson>
+					<typ:id>3</typ:id>
+					<typ:surname>Zlatuška</typ:surname>
+					<typ:name>Marek</typ:name>
+					<typ:degree>Ing.</typ:degree>
+				</adb:responsiblePerson>
+			</adb:addressbookHeader>
+			<adb:addressbookAccount>
+				<adb:accountItem>
+					<adb:id>11</adb:id>
+					<adb:accountNumber>255858585</adb:accountNumber>
+					<adb:symSpec/>
+					<adb:bankCode>0100</adb:bankCode>
+					<adb:defaultAccount>true</adb:defaultAccount>
+				</adb:accountItem>
+			</adb:addressbookAccount>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>21</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>STORMWARE s.r.o.</typ:company>
+						<typ:division/>
+						<typ:name/>
+						<typ:city>Jihlava</typ:city>
+						<typ:street>Za Prachárnou 45</typ:street>
+						<typ:zip>586 01</typ:zip>
+						<typ:ico>25313142</typ:ico>
+						<typ:dic>CZ25313142</typ:dic>
+					</typ:address>
+				</adb:identity>
+				<adb:region>Vysočina</adb:region>
+				<adb:phone>567 112 612</adb:phone>
+				<adb:fax>567 112 610</adb:fax>
+				<adb:email>info@stormware.cz</adb:email>
+				<adb:web>www.stormware.cz</adb:web>
+				<adb:adGroup>Výrobce software</adb:adGroup>
+				<adb:adKey>Viz historie</adb:adKey>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00024</typ:numberRequested>
+				</adb:number>
+				<adb:p1>false</adb:p1>
+				<adb:p2>false</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+			</adb:addressbookHeader>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>22</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>Škofin a. s.</typ:company>
+						<typ:division/>
+						<typ:name>Jan Bárta</typ:name>
+						<typ:city>Praha 10</typ:city>
+						<typ:street>Masarykova třída 15</typ:street>
+						<typ:zip>100 00</typ:zip>
+						<typ:ico>18876630</typ:ico>
+						<typ:dic>CZ18876630</typ:dic>
+					</typ:address>
+				</adb:identity>
+				<adb:region>Praha</adb:region>
+				<adb:phone>221 542 654</adb:phone>
+				<adb:mobil>602 965 472</adb:mobil>
+				<adb:fax>221 542 655</adb:fax>
+				<adb:email>info@skofin.cz</adb:email>
+				<adb:web>www.skofin.cz</adb:web>
+				<adb:adGroup>Leasing,Obchod</adb:adGroup>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00019</typ:numberRequested>
+				</adb:number>
+				<adb:p1>true</adb:p1>
+				<adb:p2>false</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+			</adb:addressbookHeader>
+			<adb:addressbookAccount>
+				<adb:accountItem>
+					<adb:id>12</adb:id>
+					<adb:accountNumber>125679504</adb:accountNumber>
+					<adb:symSpec/>
+					<adb:bankCode>0100</adb:bankCode>
+					<adb:defaultAccount>true</adb:defaultAccount>
+				</adb:accountItem>
+			</adb:addressbookAccount>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>23</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>Štěpán Hujer - Elektro</typ:company>
+						<typ:division/>
+						<typ:name>Štěpán Hujer</typ:name>
+						<typ:city>Praha 4</typ:city>
+						<typ:street>Otakarova 22</typ:street>
+						<typ:zip>140 00</typ:zip>
+						<typ:ico>11266391</typ:ico>
+						<typ:dic>CZ67062006</typ:dic>
+					</typ:address>
+				</adb:identity>
+				<adb:region>Praha</adb:region>
+				<adb:phone>234 258 741</adb:phone>
+				<adb:mobil>606 458 826</adb:mobil>
+				<adb:fax>234 159 654</adb:fax>
+				<adb:email>hujer@iol.cz</adb:email>
+				<adb:web>www.mujweb.cz/hujer</adb:web>
+				<adb:adGroup>Zákazník</adb:adGroup>
+				<adb:adKey>Hlídat placení</adb:adKey>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00020</typ:numberRequested>
+				</adb:number>
+				<adb:p1>false</adb:p1>
+				<adb:p2>true</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+			</adb:addressbookHeader>
+			<adb:addressbookAccount>
+				<adb:accountItem>
+					<adb:id>13</adb:id>
+					<adb:accountNumber>400732163</adb:accountNumber>
+					<adb:symSpec/>
+					<adb:bankCode>0300</adb:bankCode>
+					<adb:defaultAccount>true</adb:defaultAccount>
+				</adb:accountItem>
+			</adb:addressbookAccount>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>24</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>Vladimír Šimek - JIPO</typ:company>
+						<typ:division/>
+						<typ:name>Vladimír Šimek</typ:name>
+						<typ:city>Brtnice</typ:city>
+						<typ:street>Zahradní 8</typ:street>
+						<typ:zip>588 32</typ:zip>
+						<typ:ico>74120396</typ:ico>
+						<typ:dic>CZ74120396</typ:dic>
+					</typ:address>
+				</adb:identity>
+				<adb:region>Vysočina</adb:region>
+				<adb:phone>564 523 654</adb:phone>
+				<adb:mobil>602 852 963</adb:mobil>
+				<adb:fax>564 523 658</adb:fax>
+				<adb:adGroup>Obchod,Zákazník</adb:adGroup>
+				<adb:credit>100</adb:credit>
+				<adb:priceIDS>Prodejní</adb:priceIDS>
+				<adb:maturity>20</adb:maturity>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00021</typ:numberRequested>
+				</adb:number>
+				<adb:p1>false</adb:p1>
+				<adb:p2>true</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+			</adb:addressbookHeader>
+			<adb:addressbookAccount>
+				<adb:accountItem>
+					<adb:id>14</adb:id>
+					<adb:accountNumber>19-4660550217</adb:accountNumber>
+					<adb:symSpec/>
+					<adb:bankCode>0800</adb:bankCode>
+					<adb:defaultAccount>true</adb:defaultAccount>
+				</adb:accountItem>
+			</adb:addressbookAccount>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>25</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>ZET s.r.o.</typ:company>
+						<typ:division/>
+						<typ:name>Ondřej Maršín</typ:name>
+						<typ:city>Praha 3</typ:city>
+						<typ:street>Komenského 78</typ:street>
+						<typ:zip>130 00</typ:zip>
+						<typ:ico>56541223</typ:ico>
+						<typ:dic>CZ56541223</typ:dic>
+					</typ:address>
+					<typ:shipToAddress>
+						<typ:id>3</typ:id>
+						<typ:company>ZET s.r.o.</typ:company>
+						<typ:name>Tomáš Honzík</typ:name>
+						<typ:city>Jihlava 1</typ:city>
+						<typ:street>Průmyslová</typ:street>
+						<typ:defaultShipAddress>true</typ:defaultShipAddress>
+						<typ:zip>586 01</typ:zip>
+					</typ:shipToAddress>
+				</adb:identity>
+				<adb:region>Praha</adb:region>
+				<adb:phone>223 456 852</adb:phone>
+				<adb:mobil>602 236 445</adb:mobil>
+				<adb:fax>223 456 853</adb:fax>
+				<adb:email>ondrej.marsik@telecom.cz</adb:email>
+				<adb:web>www.telecom.cz/zet</adb:web>
+				<adb:adGroup>Obchod,Zákazník</adb:adGroup>
+				<adb:adKey>PF</adb:adKey>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00022</typ:numberRequested>
+				</adb:number>
+				<adb:p1>true</adb:p1>
+				<adb:p2>true</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+				<adb:accountingReceivedInvoice>
+					<typ:id>23</typ:id>
+					<typ:ids>2Fp</typ:ids>
+				</adb:accountingReceivedInvoice>
+				<adb:accountingIssuedInvoice>
+					<typ:id>15</typ:id>
+					<typ:ids>2Fv</typ:ids>
+				</adb:accountingIssuedInvoice>
+				<adb:responsiblePerson>
+					<typ:id>1</typ:id>
+					<typ:surname>Adámek</typ:surname>
+					<typ:name>Jiří</typ:name>
+					<typ:degree/>
+				</adb:responsiblePerson>
+			</adb:addressbookHeader>
+			<adb:addressbookAccount>
+				<adb:accountItem>
+					<adb:id>15</adb:id>
+					<adb:accountNumber>1071743463</adb:accountNumber>
+					<adb:symSpec/>
+					<adb:bankCode>2700</adb:bankCode>
+					<adb:defaultAccount>true</adb:defaultAccount>
+				</adb:accountItem>
+			</adb:addressbookAccount>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>26</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>ABC Audit s.r.o.</typ:company>
+						<typ:division/>
+						<typ:name>Daniela Pokorná</typ:name>
+						<typ:city/>
+						<typ:street/>
+					</typ:address>
+				</adb:identity>
+				<adb:phone>568 694 123</adb:phone>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00001</typ:numberRequested>
+				</adb:number>
+				<adb:function>sekretářka</adb:function>
+				<adb:salutation>Pokorná</adb:salutation>
+				<adb:sex>woman</adb:sex>
+				<adb:p1>false</adb:p1>
+				<adb:p2>false</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+				<adb:refAddress>
+					<typ:refAD>2</typ:refAD>
+					<typ:address>
+						<typ:company>ABC Audit s.r.o.</typ:company>
+						<typ:division/>
+						<typ:name>Ing. Roman Dvorský</typ:name>
+						<typ:city>Třebíč 1</typ:city>
+						<typ:street>Palackého 74</typ:street>
+						<typ:zip>674 01</typ:zip>
+						<typ:ico>30081593</typ:ico>
+						<typ:dic>CZ30081593</typ:dic>
+					</typ:address>
+				</adb:refAddress>
+			</adb:addressbookHeader>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>27</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>ABC Audit s.r.o.</typ:company>
+						<typ:division/>
+						<typ:name>Ing. Jan Chalupa</typ:name>
+						<typ:city/>
+						<typ:street/>
+					</typ:address>
+				</adb:identity>
+				<adb:phone>568 694 123</adb:phone>
+				<adb:mobil>602 145 698</adb:mobil>
+				<adb:fax>568 694 124</adb:fax>
+				<adb:email>chalupa@abc-audit.cz</adb:email>
+				<adb:web>www.abc-audit.cz</adb:web>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00002</typ:numberRequested>
+				</adb:number>
+				<adb:function>auditor</adb:function>
+				<adb:salutation>Chalupo</adb:salutation>
+				<adb:sex>man</adb:sex>
+				<adb:p1>false</adb:p1>
+				<adb:p2>false</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+				<adb:refAddress>
+					<typ:refAD>2</typ:refAD>
+					<typ:address>
+						<typ:company>ABC Audit s.r.o.</typ:company>
+						<typ:division/>
+						<typ:name>Ing. Roman Dvorský</typ:name>
+						<typ:city>Třebíč 1</typ:city>
+						<typ:street>Palackého 74</typ:street>
+						<typ:zip>674 01</typ:zip>
+						<typ:ico>30081593</typ:ico>
+						<typ:dic>CZ30081593</typ:dic>
+					</typ:address>
+				</adb:refAddress>
+			</adb:addressbookHeader>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>28</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>Argo, a. s.</typ:company>
+						<typ:division/>
+						<typ:name>RNDr. František Sýkora</typ:name>
+						<typ:city/>
+						<typ:street/>
+					</typ:address>
+				</adb:identity>
+				<adb:phone>229 844 353</adb:phone>
+				<adb:email>sykora@argo.cz</adb:email>
+				<adb:web>www.argo.cz</adb:web>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00003</typ:numberRequested>
+				</adb:number>
+				<adb:function>ředitel</adb:function>
+				<adb:salutation>Sýkoro</adb:salutation>
+				<adb:sex>man</adb:sex>
+				<adb:p1>false</adb:p1>
+				<adb:p2>false</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+				<adb:refAddress>
+					<typ:refAD>8</typ:refAD>
+					<typ:address>
+						<typ:company>Argo, a. s.</typ:company>
+						<typ:division/>
+						<typ:name>Martin Dvořáček</typ:name>
+						<typ:city>Praha 2</typ:city>
+						<typ:street>Trocnovská 3</typ:street>
+						<typ:zip>120 00</typ:zip>
+						<typ:ico>85471296</typ:ico>
+						<typ:dic>CZ85471296</typ:dic>
+					</typ:address>
+				</adb:refAddress>
+			</adb:addressbookHeader>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>29</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>Argo, a. s.</typ:company>
+						<typ:division/>
+						<typ:name>Zuzana Svobodová</typ:name>
+						<typ:city/>
+						<typ:street/>
+					</typ:address>
+					<typ:shipToAddress>
+						<typ:id>2</typ:id>
+						<typ:name>Zuzana Svobodová</typ:name>
+						<typ:defaultShipAddress>true</typ:defaultShipAddress>
+					</typ:shipToAddress>
+				</adb:identity>
+				<adb:phone>229 844 353</adb:phone>
+				<adb:fax>229 844 354</adb:fax>
+				<adb:email>zuza@argo.cz</adb:email>
+				<adb:web>www.argo.cz</adb:web>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00004</typ:numberRequested>
+				</adb:number>
+				<adb:function>sekretářka</adb:function>
+				<adb:salutation>Svobodová</adb:salutation>
+				<adb:sex>woman</adb:sex>
+				<adb:p1>false</adb:p1>
+				<adb:p2>false</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+				<adb:refAddress>
+					<typ:refAD>8</typ:refAD>
+					<typ:address>
+						<typ:company>Argo, a. s.</typ:company>
+						<typ:division/>
+						<typ:name>Martin Dvořáček</typ:name>
+						<typ:city>Praha 2</typ:city>
+						<typ:street>Trocnovská 3</typ:street>
+						<typ:zip>120 00</typ:zip>
+						<typ:ico>85471296</typ:ico>
+						<typ:dic>CZ85471296</typ:dic>
+					</typ:address>
+				</adb:refAddress>
+			</adb:addressbookHeader>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>30</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>A-STORES s.r.o.</typ:company>
+						<typ:division/>
+						<typ:name>Silvie Pokorná</typ:name>
+						<typ:city/>
+						<typ:street/>
+					</typ:address>
+				</adb:identity>
+				<adb:phone>581 425 541</adb:phone>
+				<adb:fax>581 425 542</adb:fax>
+				<adb:email>spokorna@a-stores.cz</adb:email>
+				<adb:web>www.a-stores.cz</adb:web>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00005</typ:numberRequested>
+				</adb:number>
+				<adb:function>Sekretářka</adb:function>
+				<adb:salutation>Pokorná</adb:salutation>
+				<adb:sex>woman</adb:sex>
+				<adb:p1>false</adb:p1>
+				<adb:p2>false</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+				<adb:refAddress>
+					<typ:refAD>11</typ:refAD>
+					<typ:address>
+						<typ:company>A-STORES s.r.o.</typ:company>
+						<typ:division/>
+						<typ:name>Josef Navrátil</typ:name>
+						<typ:city>Přerov I - Město</typ:city>
+						<typ:street>Pražská 43</typ:street>
+						<typ:zip>750 02</typ:zip>
+						<typ:ico>48365960</typ:ico>
+						<typ:dic>CZ48365960</typ:dic>
+					</typ:address>
+				</adb:refAddress>
+			</adb:addressbookHeader>
+		</lAdb:addressbook>
+		<lAdb:addressbook version="2.0">
+			<adb:addressbookHeader>
+				<adb:id>31</adb:id>
+				<adb:identity>
+					<typ:address>
+						<typ:company>A-STORES s.r.o.</typ:company>
+						<typ:division/>
+						<typ:name>Vladimír Hrdlička</typ:name>
+						<typ:city/>
+						<typ:street/>
+					</typ:address>
+				</adb:identity>
+				<adb:phone>581 425 541</adb:phone>
+				<adb:mobil>602 452 236</adb:mobil>
+				<adb:fax>581 425 542</adb:fax>
+				<adb:email>vhrdlicka@a-stores.cz</adb:email>
+				<adb:web>www.a-stores.cz</adb:web>
+				<adb:number>
+					<typ:id>48</typ:id>
+					<typ:ids>13AD</typ:ids>
+					<typ:numberRequested>13AD00006</typ:numberRequested>
+				</adb:number>
+				<adb:function>Nákupčí</adb:function>
+				<adb:salutation>Hrdličko</adb:salutation>
+				<adb:sex>man</adb:sex>
+				<adb:p1>false</adb:p1>
+				<adb:p2>false</adb:p2>
+				<adb:p3>false</adb:p3>
+				<adb:p4>false</adb:p4>
+				<adb:p5>false</adb:p5>
+				<adb:p6>false</adb:p6>
+				<adb:refAddress>
+					<typ:refAD>11</typ:refAD>
+					<typ:address>
+						<typ:company>A-STORES s.r.o.</typ:company>
+						<typ:division/>
+						<typ:name>Josef Navrátil</typ:name>
+						<typ:city>Přerov I - Město</typ:city>
+						<typ:street>Pražská 43</typ:street>
+						<typ:zip>750 02</typ:zip>
+						<typ:ico>48365960</typ:ico>
+						<typ:dic>CZ48365960</typ:dic>
+					</typ:address>
+				</adb:refAddress>
+			</adb:addressbookHeader>
+		</lAdb:addressbook>
+	</lAdb:listAddressBook>
+</rsp:responsePackItem>
+</rsp:responsePack>
