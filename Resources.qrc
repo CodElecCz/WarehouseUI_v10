@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/open.ico</file>
+        <file>icons/close.ico</file>
+        <file>icons/click.ico</file>
+        <file>icons/CodElec.png</file>
+        <file>icons/info.ico</file>
+        <file>app.ico</file>
+        <file>icons/input.ico</file>
+        <file>icons/output.ico</file>
+        <file>icons/xml-file.ico</file>
+        <file>icons/minus.ico</file>
+        <file>icons/plus.ico</file>
+    </qresource>
+</RCC>
