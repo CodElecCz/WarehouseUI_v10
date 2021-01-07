@@ -15,12 +15,7 @@ void MainWindow::createSupplierWindow(bool showWindow)
     //dock->resize(250,400);
 
     ui->menuTools->addAction(dock->toggleViewAction());
-    tabifyBottomDockWidget(dock, "SupplierView");
-
-    //resize Qt buck
-    dock->setFloating(true);
-    dock->hide();
-    dock->setFloating(false);
+    DockSupport::tabifyDockWidget(dock, "SupplierView", Qt::BottomDockWidgetArea);
 
     if(showWindow)
         dock->show();

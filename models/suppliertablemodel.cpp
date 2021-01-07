@@ -34,7 +34,8 @@ QVariant SupplierTableModel::data(const QModelIndex &index, int role) const
     if (index.row() >= m_list.size() || index.row() < 0)
         return QVariant();
 
-    if (role == Qt::DisplayRole) {
+    if (role == Qt::DisplayRole)
+    {
         SSupplier s = m_list.at(index.row());
 
         switch(index.column())

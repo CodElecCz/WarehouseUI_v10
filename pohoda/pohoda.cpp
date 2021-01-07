@@ -51,20 +51,20 @@ bool Pohoda::accounting(bool waitForFinish)
     return post(request, waitForFinish);
 }
 
-bool Pohoda::prijemka(const QString &ico, const SReceipeHeader &header, const QList<SReceipeItem> &list, bool waitForFinish)
+bool Pohoda::receipeIn(const QString &ico, const SReceipeHeader &header, const QList<SReceipeItem> &list, bool waitForFinish)
 {
-    QString request = m_prijemkaRequest.getRequest(ico, header, list);
+    QString request = m_receipeInRequest.getRequest(ico, header, list);
 
-    m_type = ERequestType_prijemka;
+    m_type = ERequestType_receipeIn;
     m_startTime = QDateTime::currentMSecsSinceEpoch();
     return post(request, waitForFinish);
 }
 
-bool Pohoda::vydejka(const QString &ico, const SReceipeHeader &header, const QList<SReceipeItem> &list, bool waitForFinish)
+bool Pohoda::receipeOut(const QString &ico, const SReceipeHeader &header, const QList<SReceipeItem> &list, bool waitForFinish)
 {
-    QString request = m_vydejkaRequest.getRequest(ico, header, list);
+    QString request = m_receipeOutRequest.getRequest(ico, header, list);
 
-    m_type = ERequestType_vydejka;
+    m_type = ERequestType_receipeOut;
     m_startTime = QDateTime::currentMSecsSinceEpoch();
     return post(request, waitForFinish);
 }
@@ -165,12 +165,12 @@ void Pohoda::onFinish(QNetworkReply *reply)
             m_accountingRequest.setResponse(text);
             break;
 
-        case ERequestType_prijemka:
-            m_prijemkaRequest.setResponse(text);
+        case ERequestType_receipeIn:
+            m_receipeInRequest.setResponse(text);
             break;
 
-        case ERequestType_vydejka:
-            m_vydejkaRequest.setResponse(text);
+        case ERequestType_receipeOut:
+            m_receipeOutRequest.setResponse(text);
             break;
 
         default:

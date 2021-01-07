@@ -4,6 +4,14 @@
 #include <QWidget>
 #include "dbs/database.h"
 
+
+typedef enum _EStockPositionsTab
+{
+    EStockPositionsTab_Positions = 0,
+    EStockPositionsTab_Movements = 1,
+    EStockPositionsTab_Material = 2
+} EStockPositionsTab;
+
 namespace Ui {
 class StockPositions;
 }
@@ -25,6 +33,7 @@ private:
 
 private slots:
     void on_comboBoxStorage_currentIndexChanged(int index);
+    void on_tabWidget_currentChanged(int index);
 
 protected:
     void changeEvent(QEvent* event);

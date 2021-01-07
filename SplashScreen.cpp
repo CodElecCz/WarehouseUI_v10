@@ -33,3 +33,18 @@ void SplashScreen::setSubTitle(QString msg)
     QApplication::processEvents();
 }
 
+QString SplashScreen::text()
+{
+    return ui->label_3->text();
+}
+
+QString SplashScreen::title()
+{
+    return ui->label_1->text();
+}
+
+QString SplashScreen::subTitle()
+{
+    return ui->label_2->text();
+}
+

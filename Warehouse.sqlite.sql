@@ -190,3 +190,29 @@ AS
            INNER JOIN
            stock ON position.stock_id = stock.id;
 
+###
+           
+CREATE VIEW receipe_view AS
+    SELECT receipe.storage_id,
+           receipe.position_1,
+           receipe.position_2,
+           receipe.position_3,
+           receipe.position_4,
+           receipe.receipe_id,
+           receipe.number,
+           receipe.state,
+           receipe.date,
+           receipe.quantity,
+           receipe.type,
+           receipe.record,
+           stock.id,
+           stock.material,
+           stock.variant,
+           stock.mass,
+           stock.unit
+      FROM receipe
+           INNER JOIN
+           stock ON receipe.stock_id = stock.id;
+
+           
+

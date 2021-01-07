@@ -15,12 +15,7 @@ void MainWindow::createStockPositionsWindow(bool showWindow, const QMap<QString,
     //dock->resize(250,400);
 
     ui->menuTools->addAction(dock->toggleViewAction());
-    tabifyRightDockWidget(dock, "Stock Positions");
-
-    //resize Qt buck
-    dock->setFloating(true);
-    dock->hide();
-    dock->setFloating(false);
+    DockSupport::tabifyDockWidget(dock, "Stock Positions", Qt::RightDockWidgetArea);
 
     if(showWindow)
         dock->show();

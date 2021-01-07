@@ -8,7 +8,7 @@
 
 #define LIGHTWIDGET_OFFSET  3
 #define LIGHTWIDGET_SIZE_V  14
-#define LIGHTWIDGET_SIZE_H  100
+#define LIGHTWIDGET_SIZE_H  120
 #define LIGHTWIDGET_BLINK   250 //ms
 
 class LightWidget : public QWidget

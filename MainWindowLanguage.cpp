@@ -99,16 +99,7 @@ void MainWindow::changeEvent(QEvent* event)
         // this event is send if a translator is loaded
         case QEvent::LanguageChange:
             ui->retranslateUi(this);
-
-            {
-                int index = 0;
-                //dock widgets titles
-                foreach(QDockWidget* w, m_bottomDockTabbing)
-                {
-                    if(m_bottomDockTitles.size()>index)
-                        w->setWindowTitle(tr(m_bottomDockTitles.at(index++).toLatin1()));
-                }
-            }
+            DockSupport::retranslate();
             break;
 
         // this event is send, if the system, language changes

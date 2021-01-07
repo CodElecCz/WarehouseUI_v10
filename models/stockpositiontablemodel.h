@@ -19,6 +19,15 @@ typedef enum _EStockPositionColumn
     EStockPositionColumn_Size
 } EStockColumn;
 
+typedef enum _EStockPositionUserData
+{
+    EStockPositionUserData_index1 = Qt::UserRole+100,
+    EStockPositionUserData_index2 = Qt::UserRole+101,
+    EStockPositionUserData_index3 = Qt::UserRole+102,
+    EStockPositionUserData_index4 = Qt::UserRole+103,
+
+} EStockPositionUserData;
+
 class StockPositionTableModel : public QAbstractTableModel
 {
     Q_OBJECT

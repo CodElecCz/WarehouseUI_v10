@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/"> 
+    <!-- Output the log message to system console.
+    -->
+    <appender name="ConsoleAppender" class="org.apache.log4j.ConsoleAppender"> 
+        <param name="Target" value="System.out"/> 
+        <layout class="org.apache.log4j.PatternLayout"> 
+            <param name="ConversionPattern" value="%d %5p %c{1} - %m%n"/> 
+        </layout> 
+    </appender> 
+  
+  
+    <!-- Output the log message to a log file named "NormalLogFile.log"
+    -->
+    <appender name="FileAppender" class="org.apache.log4j.FileAppender">
+        <param name="file" value="log/Warehouse.log" />
+        <param name="append" value="true" />
+        <layout class="org.apache.log4j.PatternLayout"> 
+            <param name="ConversionPattern" value="%d %5p %c{1} - %m%n" /> 
+        </layout>
+    </appender>
+  
+  
+   
+    <!-- Setup the root category, add the appenders and set the default level 
+         5 level of logging,  ALL < DEBUG < INFO < WARN < ERROR < FATAL 
+         The root level is set with INFO, which mean any message greater or same
+         as INFO will be log down, in this case, DEBUG is not logged. 
+         To log all regardless of logging level, set <priority value="ALL">
+    -->
+    <root>
+        <priority value="all" />
+        
+        <appender-ref ref="ConsoleAppender"/>
+        <appender-ref ref="FileAppender"/>
+       
+    </root> 
+  
+  
+ </log4j:configuration>

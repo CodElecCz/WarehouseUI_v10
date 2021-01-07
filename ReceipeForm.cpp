@@ -175,16 +175,17 @@ void ReceipeForm::on_comboBoxStorage_currentIndexChanged(int index)
 void ReceipeForm::on_pushButtonPlus_clicked(bool)
 {
     QList<SReceipeItem>list = receipeTableModel->getList();
+    int lastIndex = list.count()-1;
 
     receipeTableModel->insertRows(list.count(), 1, QModelIndex());
 
-    ui->tableView->openPersistentEditor(receipeTableModel->index(list.count(), EReceipeColumn_Material));
-    //TODO: ui->tableView->openPersistentEditor(receipeTableModel->index(list.count(), EReceipeColumn_Variant));
+    ui->tableView->closePersistentEditor(receipeTableModel->index(lastIndex, EReceipeColumn_Material));
+    //TODO: ui->tableView->openPersistentEditor(receipeTableModel->index(lastIndex, EReceipeColumn_Variant));
 
-    ui->tableView->openPersistentEditor(receipeTableModel->index(list.count(), EReceipeColumn_Position1));
-    ui->tableView->openPersistentEditor(receipeTableModel->index(list.count(), EReceipeColumn_Position2));
-    ui->tableView->openPersistentEditor(receipeTableModel->index(list.count(), EReceipeColumn_Position3));
-    ui->tableView->openPersistentEditor(receipeTableModel->index(list.count(), EReceipeColumn_Position4));
+    ui->tableView->closePersistentEditor(receipeTableModel->index(lastIndex, EReceipeColumn_Position1));
+    ui->tableView->closePersistentEditor(receipeTableModel->index(lastIndex, EReceipeColumn_Position2));
+    ui->tableView->closePersistentEditor(receipeTableModel->index(lastIndex, EReceipeColumn_Position3));
+    ui->tableView->closePersistentEditor(receipeTableModel->index(lastIndex, EReceipeColumn_Position4));
 
     setLastEditableRow(true);
 }

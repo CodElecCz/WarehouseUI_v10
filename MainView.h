@@ -24,7 +24,7 @@ public:
 
     void setSupplierList(const QList<SSupplier>& suppliers);
     void setStorageList(const QList<SStorage>& storageList);
-    void showXml(const QString& xml);
+    void showXml(const QString& xml);    
 
 protected:
     void changeEvent(QEvent* event);

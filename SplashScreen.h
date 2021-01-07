@@ -19,6 +19,10 @@ public:
     void setTitle(QString msg);
     void setSubTitle(QString msg);
 
+    QString text();
+    QString title();
+    QString subTitle();
+
 private:
     Ui::SplashScreen         *ui;
 };

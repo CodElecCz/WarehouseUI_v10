@@ -6,6 +6,13 @@
 #include <QList>
 #include "pohoda/pohoda.h"
 
+#include <log4cxx/logger.h>
+
+#ifndef LOG4QT
+#define LOG4QT(type, qstring) \
+//    LOG4CXX_##type(logger, qstring.trimmed().toUtf8().constData())
+#endif
+
 typedef struct _SStockPosition
 {
     //warehouse
@@ -56,6 +63,8 @@ class Database : public QObject
 {
     Q_OBJECT
 
+    static log4cxx::LoggerPtr logger;
+
 public:
     Database(QObject *parent);
 
@@ -81,11 +90,15 @@ public:
     //stock movement
     bool insertReceipe(const SReceipe& receipe, EReceipeType type);
     bool validateReceipe(const SReceipeItem &receipe, EReceipeType type);
+    bool selectReceipesFromPosition(const SStockPosition& position, QList<SReceipe>& receipes);
 
     //positions
     bool selectPostions(QList<SStockPosition>& position, int storage_id = -1);
 
     QString getQueryLastError();
+
+private:
+    EReceipeType getReceipeType(QString type);
 
 private:
     const char* CReceipeType[EReceipeType_count] = {"none", "in", "out"};

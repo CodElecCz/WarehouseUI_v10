@@ -1,0 +1,184 @@
+2020-06-18 10:47:59,201  INFO Warehouse - Start application
+2020-06-18 10:47:59,502  INFO MainWindow - v1.2 (16.6.2020)
+2020-06-18 10:48:00,076  INFO Database - Open
+2020-06-18 10:48:00,076  INFO Database - Query: SELECT * FROM stock
+2020-06-18 10:48:00,079  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 10:48:00,085  INFO Database - Query: SELECT * FROM storage
+2020-06-18 10:48:00,086  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 10:54:31,157  INFO Warehouse - Start application
+2020-06-18 10:54:31,276  INFO MainWindow - v1.2 (16.6.2020)
+2020-06-18 10:54:31,774  INFO Database - Open
+2020-06-18 10:54:31,774  INFO Database - Query: SELECT * FROM stock
+2020-06-18 10:54:31,775  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 10:54:31,975  INFO Database - Query: SELECT * FROM storage
+2020-06-18 10:54:31,975  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 10:59:25,725  INFO Warehouse - Start application
+2020-06-18 10:59:26,085  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 10:59:26,240  INFO Database - Open
+2020-06-18 10:59:26,240  INFO Database - Query: SELECT * FROM stock
+2020-06-18 10:59:26,241  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 10:59:26,244  INFO Database - Query: SELECT * FROM storage
+2020-06-18 10:59:26,245  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 10:59:56,773  INFO Database - Close
+2020-06-18 10:59:57,894  INFO Warehouse - Exit application
+2020-06-18 11:16:56,797  INFO Warehouse - Start application -console
+2020-06-18 11:16:57,109  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:16:57,214  INFO Database - Open
+2020-06-18 11:16:57,214  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:16:57,216  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:16:57,219  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:16:57,219  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:17:02,635  INFO Database - Close
+2020-06-18 11:17:03,721  INFO Warehouse - Exit application
+2020-06-18 11:17:11,232  INFO Warehouse - Start application
+2020-06-18 11:17:11,530  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:17:11,640  INFO Database - Open
+2020-06-18 11:17:11,640  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:17:11,641  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:17:11,643  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:17:11,644  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:17:17,486  INFO Database - Close
+2020-06-18 11:17:18,568  INFO Warehouse - Exit application
+2020-06-18 11:17:25,008  INFO Warehouse - Start application -console
+2020-06-18 11:17:25,318  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:17:25,423  INFO Database - Open
+2020-06-18 11:17:25,423  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:17:25,425  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:17:25,428  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:17:25,428  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:17:30,104  INFO Database - Close
+2020-06-18 11:17:31,189  INFO Warehouse - Exit application
+2020-06-18 11:17:40,584  INFO Warehouse - Start application -console
+2020-06-18 11:17:40,893  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:17:40,991  INFO Database - Open
+2020-06-18 11:17:40,991  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:17:40,992  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:17:40,994  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:17:40,995  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:17:45,642  INFO Database - Close
+2020-06-18 11:17:46,727  INFO Warehouse - Exit application
+2020-06-18 11:17:50,131  INFO Warehouse - Start application -style -console
+2020-06-18 11:17:50,440  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:17:50,545  INFO Database - Open
+2020-06-18 11:17:50,622  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:17:50,623  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:17:50,628  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:17:50,629  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:17:55,775  INFO Database - Close
+2020-06-18 11:17:56,861  INFO Warehouse - Exit application
+2020-06-18 11:18:17,875  INFO Warehouse - Start application
+2020-06-18 11:18:18,172  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:18:18,522  INFO Database - Open
+2020-06-18 11:18:18,522  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:18:18,523  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:18:18,524  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:18:18,525  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:18:22,448  INFO Database - Close
+2020-06-18 11:18:23,530  INFO Warehouse - Exit application
+2020-06-18 11:19:10,209  INFO Warehouse - Start application -console
+2020-06-18 11:19:10,527  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:19:10,629  INFO Database - Open
+2020-06-18 11:19:10,630  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:19:10,631  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:19:10,632  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:19:10,633  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:19:15,532  INFO Database - Close
+2020-06-18 11:19:16,612  INFO Warehouse - Exit application
+2020-06-18 11:19:21,421  INFO Warehouse - Start application -console
+2020-06-18 11:19:21,741  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:19:21,844  INFO Database - Open
+2020-06-18 11:19:21,845  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:19:21,846  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:19:21,847  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:19:21,847  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:19:26,494  INFO Database - Close
+2020-06-18 11:19:27,584  INFO Warehouse - Exit application
+2020-06-18 11:20:23,318  INFO Warehouse - Start application -console
+2020-06-18 11:20:23,623  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:20:23,728  INFO Database - Open
+2020-06-18 11:20:23,728  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:20:23,729  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:20:23,731  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:20:23,731  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:20:28,818  INFO Database - Close
+2020-06-18 11:20:29,908  INFO Warehouse - Exit application
+2020-06-18 11:22:25,685  INFO Warehouse - Start application -style -console
+2020-06-18 11:22:25,998  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:22:26,105  INFO Database - Open
+2020-06-18 11:22:26,105  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:22:26,106  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:22:26,109  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:22:26,110  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:22:34,264  INFO Database - Close
+2020-06-18 11:22:35,351  INFO Warehouse - Exit application
+2020-06-18 11:22:45,708  INFO Warehouse - Start application -style -console
+2020-06-18 11:22:46,027  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:22:46,133  INFO Database - Open
+2020-06-18 11:22:46,133  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:22:46,134  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:22:46,137  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:22:46,138  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:22:50,883  INFO Database - Close
+2020-06-18 11:22:51,982  INFO Warehouse - Exit application
+2020-06-18 11:32:11,417  INFO Warehouse - Start application -style -console
+2020-06-18 11:32:11,739  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:32:11,884  INFO Database - Open
+2020-06-18 11:32:11,884  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:32:11,885  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:32:11,887  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:32:11,887  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:32:18,885  INFO Database - Close
+2020-06-18 11:32:19,943  INFO Warehouse - Exit application
+2020-06-18 11:32:23,794  INFO Warehouse - Start application -style -console
+2020-06-18 11:32:24,104  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:32:24,258  INFO Database - Open
+2020-06-18 11:32:24,258  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:32:24,260  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:32:24,262  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:32:24,263  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:32:30,951  INFO Database - Close
+2020-06-18 11:32:32,057  INFO Warehouse - Exit application
+2020-06-18 11:33:23,145  INFO Warehouse - Start application -style -console
+2020-06-18 11:33:23,463  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:33:23,610  INFO Database - Open
+2020-06-18 11:33:23,611  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:33:23,612  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:33:23,614  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:33:23,615  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:33:47,701  INFO Database - Close
+2020-06-18 11:33:48,813  INFO Warehouse - Exit application
+2020-06-18 11:36:37,313  INFO Warehouse - Start application
+2020-06-18 11:36:37,623  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:36:37,773  INFO Database - Open
+2020-06-18 11:36:37,773  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:36:37,773  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:36:37,776  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:36:37,777  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:36:45,796  INFO Database - Close
+2020-06-18 11:36:46,900  INFO Warehouse - Exit application
+2020-06-18 11:44:04,190  INFO Warehouse - Start application -style
+2020-06-18 11:44:04,492  INFO MainWindow - 1.2 (18.6.2020)
+2020-06-18 11:44:04,638  INFO Database - Open
+2020-06-18 11:44:04,638  INFO Database - Query: SELECT * FROM stock
+2020-06-18 11:44:04,639  INFO Database - Query: SELECT * FROM supplier
+2020-06-18 11:44:04,641  INFO Database - Query: SELECT * FROM storage
+2020-06-18 11:44:04,642  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2020-06-18 11:44:28,334  INFO Database - Query: SELECT * FROM receipe_view WHERE storage_id='2' AND position_1='0' AND position_2='0' AND position_3='0' AND position_4='3' ORDER BY record DESC
+2020-06-18 11:44:31,528  INFO Database - Query: SELECT * FROM receipe_view WHERE storage_id='2' AND position_1='0' AND position_2='0' AND position_3='0' AND position_4='0' ORDER BY record DESC
+2020-06-18 11:44:38,309  INFO Database - Query: SELECT * FROM receipe_view WHERE storage_id='2' AND position_1='0' AND position_2='0' AND position_3='0' AND position_4='0' ORDER BY record DESC
+2020-06-18 11:44:39,366  INFO Database - Query: SELECT * FROM receipe_view WHERE storage_id='2' AND position_1='0' AND position_2='0' AND position_3='0' AND position_4='0' ORDER BY record DESC
+2020-06-18 11:44:40,076  INFO Database - Query: SELECT * FROM receipe_view WHERE storage_id='2' AND position_1='0' AND position_2='0' AND position_3='0' AND position_4='0' ORDER BY record DESC
+2020-06-18 11:44:40,765  INFO Database - Query: SELECT * FROM receipe_view WHERE storage_id='2' AND position_1='0' AND position_2='0' AND position_3='0' AND position_4='0' ORDER BY record DESC
+2020-06-18 11:44:44,380  INFO Database - Query: SELECT * FROM receipe_view WHERE storage_id='2' AND position_1='0' AND position_2='0' AND position_3='0' AND position_4='0' ORDER BY record DESC
+2020-06-18 11:44:45,169  INFO Database - Query: SELECT * FROM receipe_view WHERE storage_id='2' AND position_1='0' AND position_2='0' AND position_3='0' AND position_4='0' ORDER BY record DESC
+2020-06-18 11:44:47,691  INFO Database - Close
+2020-06-18 11:44:48,728  INFO Warehouse - Exit application
+2021-01-07 11:22:52,636  INFO Warehouse - Start application
+2021-01-07 11:22:52,994  INFO MainWindow - 1.2 (18.6.2020)
+2021-01-07 11:22:53,168  INFO Database - Open
+2021-01-07 11:22:53,168  INFO Database - Query: SELECT * FROM stock
+2021-01-07 11:22:53,170  INFO Database - Query: SELECT * FROM supplier
+2021-01-07 11:22:53,172  INFO Database - Query: SELECT * FROM storage
+2021-01-07 11:22:53,173  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2021-01-07 11:22:59,887  INFO Database - Close
+2021-01-07 11:23:01,000  INFO Warehouse - Exit application

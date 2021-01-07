@@ -3,6 +3,7 @@
 #include "ui_StockPositions.h"
 #include "models/stockpositiontablemodel.h"
 #include "models/progressbaritemdelegate.h"
+#include "models/receipelisttablemodel.h"
 
 StockPositions::StockPositions(Database *database, const QMap<QString, SPositionConfig>& positionsMap, QWidget *parent):
     QWidget(parent),
@@ -13,6 +14,7 @@ StockPositions::StockPositions(Database *database, const QMap<QString, SPosition
 {
     ui->setupUi(this);
 
+    //StockPositionTable
     StockPositionTableModel *model = new StockPositionTableModel(ui->tableViewPosition);
     ui->tableViewPosition->setModel(model);
 
@@ -40,6 +42,28 @@ StockPositions::StockPositions(Database *database, const QMap<QString, SPosition
 
     ProgressBarItemDelegate* pbid = new ProgressBarItemDelegate(ui->tableViewPosition);
     ui->tableViewPosition->setItemDelegateForColumn(EStockPositionColumn_Load, pbid);
+
+    //ReceipeListTable
+    ReceipeListTableModel *model2 = new ReceipeListTableModel(ui->tableViewMovements);
+    ui->tableViewMovements->setModel(model2);
+
+    QHeaderView *verticalHeader2 = ui->tableViewMovements->verticalHeader();
+    verticalHeader2->setSectionResizeMode(QHeaderView::Fixed);
+    verticalHeader2->setDefaultSectionSize(20);
+
+    ui->tableViewMovements->horizontalHeader()->setSectionResizeMode(EReceipeListColumn_material, QHeaderView::Stretch);
+    ui->tableViewMovements->horizontalHeader()->setSectionResizeMode(EReceipeListColumn_variant, QHeaderView::Stretch);
+
+    ui->tableViewMovements->horizontalHeader()->setSectionResizeMode(EReceipeListColumn_date, QHeaderView::Interactive);
+    ui->tableViewMovements->horizontalHeader()->setSectionResizeMode(EReceipeListColumn_type, QHeaderView::Interactive);
+    ui->tableViewMovements->horizontalHeader()->setSectionResizeMode(EReceipeListColumn_quantity, QHeaderView::Interactive);
+    ui->tableViewMovements->horizontalHeader()->setSectionResizeMode(EReceipeListColumn_unit, QHeaderView::Interactive);
+
+    ui->tableViewMovements->setColumnWidth(EReceipeListColumn_date, 80);
+    ui->tableViewMovements->setColumnWidth(EReceipeListColumn_type, 40);
+
+    ui->tableViewMovements->setColumnWidth(EReceipeListColumn_quantity, 40);
+    ui->tableViewMovements->setColumnWidth(EReceipeListColumn_unit, 60);
 }
 
 StockPositions::~StockPositions()
@@ -77,6 +101,49 @@ void StockPositions::setStorageList(const QList<SStorage>& storageList)
     if(ui->comboBoxStorage->count()>0)
     {
         on_comboBoxStorage_currentIndexChanged(0);
+    }
+}
+
+void StockPositions::on_tabWidget_currentChanged(int index)
+{
+    switch(index)
+    {
+    case EStockPositionsTab_Movements:
+        {
+            QModelIndexList selection = ui->tableViewPosition->selectionModel()->selectedRows();
+
+            ReceipeListTableModel *model = qobject_cast<ReceipeListTableModel *>(ui->tableViewMovements->model());
+            Q_ASSERT(model);
+
+            if(selection.count()>0)
+            {
+                SStockPosition p = {};
+                int row = selection.at(0).row();
+                p.index1 = ui->tableViewPosition->model()->data(QModelIndex(selection.at(0)), EStockPositionUserData_index1).toInt();
+                p.index2 = ui->tableViewPosition->model()->data(QModelIndex(selection.at(0)), EStockPositionUserData_index2).toInt();
+                p.index3 = ui->tableViewPosition->model()->data(QModelIndex(selection.at(0)), EStockPositionUserData_index3).toInt();
+                p.index4 = ui->tableViewPosition->model()->data(QModelIndex(selection.at(0)), EStockPositionUserData_index4).toInt();
+                p.storage_id = ui->comboBoxStorage->currentData().toInt();
+
+                QList<SReceipe> r;
+                dbs->selectReceipesFromPosition(p, r);
+
+                QModelIndex index = selection.at(0);
+                const QModelIndex positionIndex = index.sibling(index.row(), EStockPositionColumn_Position);
+
+                QString positionName = ui->tableViewPosition->model()->data(positionIndex, Qt::DisplayRole).toString();
+                ui->lineEditPosition->setText(positionName);
+                ReceipeListTableModel *model = new ReceipeListTableModel(r, ui->tableViewMovements);
+                ui->tableViewMovements->setModel(model);
+            }
+            else
+            {
+                ui->lineEditPosition->setText("");
+                ReceipeListTableModel *model = new ReceipeListTableModel(ui->tableViewMovements);
+                ui->tableViewMovements->setModel(model);
+            }
+        }
+        break;
     }
 }
 

@@ -12,16 +12,23 @@
 #include "StockPositions.h"
 #include "MainView.h"
 #include "SplashScreen.h"
+#include "DockSupport.h"
 
-#define APP_VER "v1.2"
+#include <log4cxx/logger.h>
+
+#define APP_VER             "1.2"
+#define WINDOW_MIN_WIDTH    800
+#define WINDOW_MIN_HEIGHT   600
 
 namespace Ui {
 class MainWindow;
 }
 
-class MainWindow : public QMainWindow
+class MainWindow : public DockSupport
 {
-    Q_OBJECT
+    Q_OBJECT    
+
+    static log4cxx::LoggerPtr logger;
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
@@ -80,11 +87,6 @@ private:
     StockPositions  *stockPositions;
     Pohoda          *pohoda;
     Database        *dbs;
-
-    QList<QDockWidget*> m_bottomDockTabbing;
-    QList<QDockWidget*> m_leftDockTabbing;
-    QList<QDockWidget*> m_rightDockTabbing;
-    QStringList         m_bottomDockTitles;
 
     QString             m_defAccoutningUnitIco;
     QTranslator         m_translator; // contains the translations for this application

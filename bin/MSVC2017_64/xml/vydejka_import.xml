@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="Windows-1250"?>
+<dat:dataPack id="vyd001" ico="12345678" application="StwTest" version = "2.0" note="Import Vydejky" 
+xmlns:dat="http://www.stormware.cz/schema/version_2/data.xsd" 
+xmlns:vyd="http://www.stormware.cz/schema/version_2/vydejka.xsd" 
+xmlns:typ="http://www.stormware.cz/schema/version_2/type.xsd">
+
+<dat:dataPackItem id="VYD001" version="2.0">
+<!-- import výdejky -->
+	<vyd:vydejka version="2.0">
+  
+		<vyd:vydejkaHeader>
+			<vyd:date></vyd:date>		
+			<vyd:text></vyd:text>    
+			            
+			<!--adresa bez vazby na program POHODA-->
+      <vyd:partnerIdentity>	
+				<typ:address>
+					<typ:company></typ:company>
+					<typ:division></typ:division>
+					<typ:name></typ:name>
+					<typ:city></typ:city>
+					<typ:street></typ:street>
+					<typ:zip></typ:zip>
+					<typ:ico></typ:ico>
+					<typ:dic></typ:dic>
+				</typ:address>
+				<typ:shipToAddress>
+					<typ:name></typ:name>
+					<typ:city></typ:city>
+					<typ:street></typ:street>
+				</typ:shipToAddress>
+			</vyd:partnerIdentity>
+      			
+			<vyd:note></vyd:note>
+			<vyd:intNote></vyd:intNote>
+		</vyd:vydejkaHeader>
+
+		<vyd:vydejkaDetail>
+    
+		<!--skladova polozka-->	
+		<vyd:vydejkaItem>
+			<vyd:quantity></vyd:quantity>
+			<vyd:unit></vyd:unit>
+			<vyd:coefficient>1</vyd:coefficient>
+			<vyd:rateVAT>high</vyd:rateVAT>
+			<vyd:discountPercentage>0</vyd:discountPercentage>
+      
+			<vyd:stockItem>
+				<typ:stockItem>
+					<typ:ids></typ:ids>
+				</typ:stockItem>
+			</vyd:stockItem>
+      		
+		</vyd:vydejkaItem>
+		
+		</vyd:vydejkaDetail>
+
+	</vyd:vydejka>
+</dat:dataPackItem>
+</dat:dataPack>

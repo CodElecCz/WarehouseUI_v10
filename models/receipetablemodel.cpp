@@ -299,7 +299,7 @@ Qt::ItemFlags ReceipeTableModel::flags(const QModelIndex &index) const
              break;
 
          default:
-             return false;
+             return Qt::NoItemFlags;
          }
      }
 

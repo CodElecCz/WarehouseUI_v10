@@ -10,6 +10,24 @@
     <height>600</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
   <property name="font">
    <font>
     <pointsize>12</pointsize>
@@ -32,7 +50,7 @@
     <number>5</number>
    </property>
    <property name="bottomMargin">
-    <number>5</number>
+    <number>0</number>
    </property>
    <item>
     <widget class="QComboBox" name="comboBoxStorage">
@@ -54,8 +72,8 @@
        <property name="font">
         <font>
          <pointsize>9</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <weight>50</weight>
+         <bold>false</bold>
         </font>
        </property>
        <property name="tabPosition">
@@ -100,8 +118,50 @@
        </widget>
        <widget class="QWidget" name="tab_2">
         <attribute name="title">
-         <string>Detail</string>
+         <string>Movemets</string>
         </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLineEdit" name="lineEditPosition">
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="maxLength">
+              <number>32</number>
+             </property>
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTableView" name="tableViewMovements">
+             <property name="selectionMode">
+              <enum>QAbstractItemView::SingleSelection</enum>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectRows</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
        </widget>
       </widget>
      </item>

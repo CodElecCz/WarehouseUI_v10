@@ -8,5 +8,6 @@ Software:
 
 ### User Interface
 
-![Warehouse GUI](https://codeleccz.github.io/WarehouseUIv1/Screenshot1.png)
+![Warehouse01 GUI](https://codeleccz.github.io/WarehouseUIv1/screenshots/warehouse01.png)
+![Warehouse02 GUI](https://codeleccz.github.io/WarehouseUIv1/screenshots/warehouse02.png)
 

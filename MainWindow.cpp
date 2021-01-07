@@ -13,9 +13,14 @@
 #include "ui_MainWindow.h"
 #include "LightWidget.h"
 #include "ui_AboutDialog.h"
+#include "style/CustomStyle.h"
+
+using namespace log4cxx;
+
+//LoggerPtr MainWindow::logger(Logger::getLogger("Warehouse.MainWindow"));
 
 MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent),
+    DockSupport(parent),
     ui(new Ui::MainWindow),
 
     stockView(nullptr),
@@ -47,18 +52,9 @@ void MainWindow::readAppSettings()
     QSettings settings("QT", "WarehouseUI");
 
     settings.beginGroup("MainWindow");
-    if(settings.value("isFullScreen").toBool())
-    {
-        ;//showFullScreen();
-    }
-    else
-    {
-        resize(settings.value("size", QSize(800, 600)).toSize());
-        move(settings.value("pos", QPoint(100, 100)).toPoint());
-    }
-    addToolBar((Qt::ToolBarArea)settings.value("toolBarArea").toUInt(), ui->mainToolBar);
-
-    settings.endGroup();
+    restoreGeometry(settings.value("geometry").toByteArray());
+    restoreState(settings.value("windowState").toByteArray());
+    settings.endGroup();    
 }
 
 void MainWindow::writeAppSettings()
@@ -66,11 +62,8 @@ void MainWindow::writeAppSettings()
     QSettings settings("QT", "WarehouseUI");
 
     settings.beginGroup("MainWindow");
-    settings.setValue("isFullScreen", MainWindow::isFullScreen());
-    settings.setValue("size", size());
-    settings.setValue("pos", pos());
-    settings.setValue("toolBarArea", toolBarArea(ui->mainToolBar));
-
+    settings.setValue("geometry", saveGeometry());
+    settings.setValue("windowState", saveState());
     settings.endGroup();
 }
 
@@ -100,6 +93,9 @@ void MainWindow::initializeApp()
     QDate date = QLocale(QLocale::C).toDate(QString(__DATE__).simplified(), QLatin1String("MMM d yyyy"));
     info->setSubTitle(QString("%1 (%2.%3.%4)").arg(APP_VER).arg(date.day()).arg(date.month()).arg(date.year()));
     info->show();
+
+    LOG4QT(INFO, info->subTitle());
+
     int startTime =  QDateTime::currentMSecsSinceEpoch();
 
     //Layout
@@ -372,7 +368,7 @@ void MainWindow::initializeApp()
 
     bool fullScreen = config->value(QString("Aplication/FullScreen")).toBool();
     if(fullScreen)
-        showFullScreen();
+        showFullScreen();    
 }
 
 typedef enum _EButtonClose
@@ -410,8 +406,8 @@ int MainWindow::closeDialog()
     }
 
     if(reply != EButtonClose_CANCEL)
-    {
-        writeAppSettings();
+    {        
+        writeAppSettings();        
 
         this->close();
 
@@ -525,9 +521,9 @@ void MainWindow::pohoda_postResponse(ERequestType type, QString xml)
 
         break;
 
-    case ERequestType_prijemka:
+    case ERequestType_receipeIn:
         {
-            SReceipe receipe = pohoda->getPrijemka();
+            SReceipe receipe = pohoda->getReceipeIn();
 
             QString msg = QString(tr("State: '%1'\nNumber: '%2'\n\n")).arg(receipe.state, receipe.number);
             if(receipe.note.length()>0)
@@ -562,9 +558,9 @@ void MainWindow::pohoda_postResponse(ERequestType type, QString xml)
         }
         break;
 
-    case ERequestType_vydejka:
+    case ERequestType_receipeOut:
         {
-            SReceipe receipe = pohoda->getVydejka();
+            SReceipe receipe = pohoda->getReceipeOut();
 
             QString msg = QString(tr("State: '%1'\nNumber: '%2'\n\n")).arg(receipe.state, receipe.number);
             if(receipe.note.length()>0)
@@ -610,7 +606,7 @@ void MainWindow::view_prijemkaCreate(SReceipe receipe)
 {
     if(!m_pohodaDisable)
     {
-        pohoda->prijemka(m_defAccoutningUnitIco, receipe.header, receipe.list);
+        pohoda->receipeIn(m_defAccoutningUnitIco, receipe.header, receipe.list);
     }
     else
     {
@@ -651,7 +647,7 @@ void MainWindow::view_vydejkaCreate(SReceipe receipe)
 {
     if(!m_pohodaDisable)
     {
-        pohoda->vydejka(m_defAccoutningUnitIco, receipe.header, receipe.list);
+        pohoda->receipeOut(m_defAccoutningUnitIco, receipe.header, receipe.list);
     }
     else
     {
@@ -697,58 +693,7 @@ void MainWindow::aboutDialog()
     QDate date = QLocale(QLocale::C).toDate(QString(__DATE__).simplified(), QLatin1String("MMM d yyyy"));
     aboutUi.labelVer->setText(QString("%1 (%2.%3.%4)").arg(APP_VER).arg(date.day()).arg(date.month()).arg(date.year()));
 
-    info->show();
-}
-
-void MainWindow::tabifyBottomDockWidget(QDockWidget *dockwidget, QString title)
-{
-    m_bottomDockTabbing.insert(0, dockwidget);
-    m_bottomDockTitles.insert(0, title);
-
-    addDockWidget(Qt::BottomDockWidgetArea, dockwidget);
-
-    int size = m_bottomDockTabbing.size();
-    if(size>1)
-    {
-        QDockWidget* first = m_bottomDockTabbing.at(size-1);
-        QDockWidget* second = m_bottomDockTabbing.at(0);
-
-        tabifyDockWidget(first, second);
-    }
-}
-
-void MainWindow::tabifyLeftDockWidget(QDockWidget *dockwidget, QString title)
-{
-    m_bottomDockTabbing.insert(0, dockwidget);
-    m_bottomDockTitles.insert(0, title);
-
-    addDockWidget(Qt::LeftDockWidgetArea, dockwidget);
-
-    int size = m_leftDockTabbing.size();
-    if(size>1)
-    {
-        QDockWidget* first = m_leftDockTabbing.at(size-1);
-        QDockWidget* second = m_leftDockTabbing.at(0);
-
-        tabifyDockWidget(first, second);
-    }
-}
-
-void MainWindow::tabifyRightDockWidget(QDockWidget *dockwidget, QString title)
-{
-    m_bottomDockTabbing.insert(0, dockwidget);
-    m_bottomDockTitles.insert(0, title);
-
-    addDockWidget(Qt::RightDockWidgetArea, dockwidget);
-
-    int size = m_rightDockTabbing.size();
-    if(size>1)
-    {
-        QDockWidget* first = m_rightDockTabbing.at(size-1);
-        QDockWidget* second = m_rightDockTabbing.at(0);
-
-        tabifyDockWidget(first, second);
-    }
+    info->show();  
 }
 
 

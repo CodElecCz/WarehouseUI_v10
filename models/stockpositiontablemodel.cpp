@@ -31,9 +31,12 @@ StockPositionTableModel::StockPositionTableModel(const QList<SStockPosition>& po
     : QAbstractTableModel(parent),
       m_positions(positions),
       m_positionConfig(positionConfig),
+#ifndef _DEBUG
       m_emptyPosVisible(emptyPosVisible)
+#else //aplication to slow
+      m_emptyPosVisible(false)
+#endif
 {    
-
     int k_max = m_positionConfig.names1.size();
     int l_max = m_positionConfig.names2.size();
     int m_max = m_positionConfig.names3.size();
@@ -186,10 +189,11 @@ QVariant StockPositionTableModel::data(const QModelIndex &index, int role) const
     if (index.row() >= m_positionsMap.size() || index.row() < 0)
         return QVariant();
 
+    SStockPosition position = m_positionsMap.values().at(index.row());
+
     if (role == Qt::DisplayRole)
     {
         QString key = m_positionsMap.keys().at(index.row());
-        SStockPosition position = m_positionsMap.values().at(index.row());
 
         switch(index.column())
         {
@@ -210,6 +214,22 @@ QVariant StockPositionTableModel::data(const QModelIndex &index, int role) const
         case EStockPositionColumn_WeightMax:
             return getLoadMax(position);
         }
+    }
+    else if (role == EStockPositionUserData_index1)
+    {
+        return position.index1;
+    }
+    else if (role == EStockPositionUserData_index2)
+    {
+        return position.index2;
+    }
+    else if (role == EStockPositionUserData_index3)
+    {
+        return position.index3;
+    }
+    else if (role == EStockPositionUserData_index4)
+    {
+        return position.index4;
     }
     return QVariant();
 }

@@ -25,11 +25,22 @@ DEFINES += _TIMEVAL_DEFINED
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../Lib/log4cxxLib/msvc2017/bin/x64/release/ -llog4cxx
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../Lib/log4cxxLib/msvc2017/bin/x64/debug/ -llog4cxx
+else:unix: LIBS += -L$$PWD/../../Lib/log4cxxLib/msvc2017/bin/x64/ -llog4cxx
+
+INCLUDEPATH += $$PWD/../../Lib/log4cxxLib/msvc2017/bin/x64
+DEPENDPATH += $$PWD/../../Lib/log4cxxLib/msvc2017/bin/x64
+
+INCLUDEPATH += \
+    .\..\..\Lib\log4cxxLib\log4cxx\src\main\include
+
 TRANSLATIONS = \
     languages/warehouse_en.ts \
     languages/warehouse_cs.ts
 
 SOURCES += \
+    DockSupport.cpp \
     MainView.cpp \
     MainWindowLanguage.cpp \
     MainWindowStock.cpp \
@@ -51,6 +62,7 @@ SOURCES += \
     models/comboboxdbsdelegate.cpp \
     models/comboboxitemdelegate.cpp \
     models/progressbaritemdelegate.cpp \
+    models/receipelisttablemodel.cpp \
     models/receipetablemodel.cpp \
     models/regexpitemdelegate.cpp \
     models/stockpositiontablemodel.cpp \
@@ -59,13 +71,15 @@ SOURCES += \
     models/suppliertablemodel.cpp \
     pohoda/pohoda.cpp \
     pohoda/pohodaaccountingrequest.cpp \
-    pohoda/pohodaprijemkarequest.cpp \
+    pohoda/pohodareceipeinrequest.cpp \
+    pohoda/pohodareceipeoutrequest.cpp \
     pohoda/pohodastockrequest.cpp \
     pohoda/pohodastoragerequest.cpp \
     pohoda/pohodasupplierrequest.cpp \
-    pohoda/pohodavydejkarequest.cpp
+    style/CustomStyle.cpp
 
 HEADERS += \
+    DockSupport.h \
     LightWidget.h \
     MainView.h \
     MainWindow.h \
@@ -82,6 +96,7 @@ HEADERS += \
     models/comboboxdbsdelegate.h \
     models/comboboxitemdelegate.h \
     models/progressbaritemdelegate.h \
+    models/receipelisttablemodel.h \
     models/receipetablemodel.h \
     models/regexpitemdelegate.h \
     models/stockpositiontablemodel.h \
@@ -90,11 +105,12 @@ HEADERS += \
     models/suppliertablemodel.h \
     pohoda/pohoda.h \
     pohoda/pohodaaccountingrequest.h \
-    pohoda/pohodaprijemkarequest.h \
+    pohoda/pohodareceipeinrequest.h \
+    pohoda/pohodareceipeoutrequest.h \
     pohoda/pohodastockrequest.h \
     pohoda/pohodastoragerequest.h \
     pohoda/pohodasupplierrequest.h \
-    pohoda/pohodavydejkarequest.h
+    style/CustomStyle.h
 
 FORMS += \
     AboutDialog.ui \
@@ -109,10 +125,12 @@ FORMS += \
     SupplierView.ui
 
 RESOURCES += \
+    DarkStyle.qrc \
+    LightStyle.qrc \
     Resources.qrc
 
-RC_FILE += \
-    Resource.rc
+#RC_FILE += \
+#    Resource.rc
 
 DISTFILES += \
     pohoda/xml/CleneniSkladu_01_v2.0 (response).xml \
