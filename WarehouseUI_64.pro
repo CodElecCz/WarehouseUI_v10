@@ -124,8 +124,8 @@ RESOURCES += \
     LightStyle.qrc \
     Resources.qrc
 
-#RC_FILE += \
-#    Resource.rc
+RC_FILE += \
+    Resource.rc
 
 DISTFILES += \
     pohoda/xml/CleneniSkladu_01_v2.0 (response).xml \
