@@ -182,3 +182,12 @@
 2021-01-07 11:22:53,173  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
 2021-01-07 11:22:59,887  INFO Database - Close
 2021-01-07 11:23:01,000  INFO Warehouse - Exit application
+2021-01-07 11:50:56,587  INFO Warehouse - Start application
+2021-01-07 11:50:56,919  INFO MainWindow - 1.2 (18.6.2020)
+2021-01-07 11:50:57,070  INFO Database - Open
+2021-01-07 11:50:57,070  INFO Database - Query: SELECT * FROM stock
+2021-01-07 11:50:57,071  INFO Database - Query: SELECT * FROM supplier
+2021-01-07 11:50:57,073  INFO Database - Query: SELECT * FROM storage
+2021-01-07 11:50:57,074  INFO Database - Query: SELECT * FROM position_view WHERE storage_id='2'
+2021-01-07 11:52:11,290  INFO Database - Close
+2021-01-07 11:52:12,445  INFO Warehouse - Exit application

@@ -25,15 +25,10 @@ DEFINES += _TIMEVAL_DEFINED
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../Lib/log4cxxLib/msvc2017/bin/x64/release/ -llog4cxx
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../Lib/log4cxxLib/msvc2017/bin/x64/debug/ -llog4cxx
-else:unix: LIBS += -L$$PWD/../../Lib/log4cxxLib/msvc2017/bin/x64/ -llog4cxx
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/Lib/Build64/release/ -llog4cxx
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/Lib/Build64/debug/ -llog4cxx
 
-INCLUDEPATH += $$PWD/../../Lib/log4cxxLib/msvc2017/bin/x64
-DEPENDPATH += $$PWD/../../Lib/log4cxxLib/msvc2017/bin/x64
-
-INCLUDEPATH += \
-    .\..\..\Lib\log4cxxLib\log4cxx\src\main\include
+INCLUDEPATH += Lib/log4cxx/log4cxx/src/main/include
 
 TRANSLATIONS = \
     languages/warehouse_en.ts \
